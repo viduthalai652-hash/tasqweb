@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Create beautiful landing pages and complete sales funnels without any coding. Drag, drop, publish, and watch your conversions soar with TASQ's powerful funnel builder.">
+  <title>Funnel Builder – Build High-Converting Sales Funnels | TASQ</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%23FF6A00'/><text x='50%25' y='54%25' dominant-baseline='middle' text-anchor='middle' font-family='Poppins,sans-serif' font-weight='900' font-size='20' fill='white'>T</text></svg>">
+  <link rel="stylesheet" href="../css/variables.css">
+  <link rel="stylesheet" href="../css/animations.css">
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="../css/navbar.css">
+  <link rel="stylesheet" href="../css/feature-detail.css">
+</head>
+<body>
+
+<!-- Shared Navbar -->
+<nav class="navbar" id="navbar">
+  <div class="nav-container">
+    <a href="../index.html" class="nav-logo">
+      <div class="logo-icon">T</div>
+      <span class="logo-text">TASQ</span>
+    </a>
+    <div class="nav-links" id="navLinks">
+      <a href="../features.html" class="nav-link active">Features</a>
+      <a href="../pricing.html" class="nav-link">Pricing</a>
+      <a href="../contact.html" class="nav-link nav-cta">Contact</a>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <button class="mobile-close" id="mobileClose">✕</button>
+  <a href="../index.html" class="mobile-nav-link">Home</a>
+  <a href="../features.html" class="mobile-nav-link">Features</a>
+  <a href="../pricing.html" class="mobile-nav-link">Pricing</a>
+  <a href="../contact.html" class="mobile-nav-link">Contact</a>
+</div>
+<div class="mobile-overlay" id="mobileOverlay"></div>
+
+<!-- Feature Hero -->
+<section class="feature-hero">
+  <div class="particles-container"></div>
+  <div class="container">
+    <div class="feature-hero-grid">
+      <!-- Left -->
+      <div class="feature-hero-content">
+        <div class="feature-badge reveal"><span class="feature-badge-dot"></span> 🎯 Funnel Builder</div>
+        <h1 class="reveal reveal-delay-1">Build <span>High-Converting</span> Sales Funnels</h1>
+        <p class="feature-hero-desc reveal reveal-delay-2">Create beautiful landing pages and complete sales funnels without any coding. Drag, drop, publish, and watch your conversions soar with TASQ's powerful funnel builder.</p>
+        
+        <div class="feature-hero-highlights reveal reveal-delay-3">
+          <div class="hero-highlight"><span class="hero-highlight-icon">✓</span> Drag-and-Drop Builder</div>
+          <div class="hero-highlight"><span class="hero-highlight-icon">✓</span> A/B Testing</div>
+          <div class="hero-highlight"><span class="hero-highlight-icon">✓</span> Real-Time Analytics</div>
+        </div>
+        
+        <div class="feature-hero-btns reveal reveal-delay-4">
+          <a href="../pricing.html" class="btn btn-primary btn-lg btn-ripple">View Pricing <span class="btn-arrow">→</span></a>
+          <a href="../contact.html" class="btn btn-secondary btn-lg btn-ripple">Contact Us <span class="btn-arrow">→</span></a>
+        </div>
+      </div>
+      
+      <!-- Right (Dashboard) -->
+      <div class="hero-dashboard reveal-left reveal-delay-2">
+        <div class="db-header">
+          <div class="db-dots"><span></span><span></span><span></span></div>
+          <div class="db-title">Funnels Dashboard</div>
+          <div class="db-badge">● Live</div>
+        </div>
+        <div class="db-body">
+          <div class="db-metrics">
+            <div class="db-metric">
+              <div class="db-metric-val">24</div>
+              <div class="db-metric-label">Active Funnels</div>
+            </div>
+            <div class="db-metric">
+              <div class="db-metric-val">8.4%</div>
+              <div class="db-metric-label">Conversion</div>
+            </div>
+            <div class="db-metric">
+              <div class="db-metric-val">$92K</div>
+              <div class="db-metric-label">Revenue</div>
+            </div>
+            <div class="db-metric">
+              <div class="db-metric-val">52K</div>
+              <div class="db-metric-label">Visitors</div>
+            </div>
+          </div>
+          
+          <div class="db-chart">
+            <div style="font-size:0.6rem;color:rgba(255,255,255,0.45);font-family:var(--font-heading);margin-bottom:0.5rem;font-weight:600;text-transform:uppercase;">FUNNEL CONVERSION</div>
+            <!-- Conversion funnel representation -->
+            <div style="display:flex;flex-direction:column;align-items:center;gap:0.25rem;">
+              <div style="width:100%;height:24px;background:rgba(255,106,0,0.2);border-radius:4px;display:flex;align-items:center;justify-content:center;font-size:0.65rem;color:var(--color-orange-light);font-family:var(--font-heading);">100% Visitors</div>
+              <div style="width:80%;height:24px;background:rgba(255,106,0,0.4);border-radius:4px;display:flex;align-items:center;justify-content:center;font-size:0.65rem;color:var(--color-orange-light);font-family:var(--font-heading);">45% Leads</div>
+              <div style="width:60%;height:24px;background:rgba(255,106,0,0.6);border-radius:4px;display:flex;align-items:center;justify-content:center;font-size:0.65rem;color:white;font-family:var(--font-heading);">22% Checkout</div>
+              <div style="width:40%;height:24px;background:var(--gradient-orange);border-radius:4px;display:flex;align-items:center;justify-content:center;font-size:0.65rem;color:white;font-family:var(--font-heading);font-weight:bold;">8.4% Sales</div>
+            </div>
+          </div>
+          
+          <div class="db-list">
+            <div class="db-list-item">
+              <div class="db-list-dot" style="background:#22c55e"></div>
+              <div class="db-list-text">Webinar Registration Funnel</div>
+              <div class="db-list-badge" style="background:rgba(34,197,94,0.15);color:#22c55e">12.4% Conv</div>
+            </div>
+            <div class="db-list-item">
+              <div class="db-list-dot" style="background:#3b82f6"></div>
+              <div class="db-list-text">SaaS Trial Sign-up</div>
+              <div class="db-list-badge" style="background:rgba(59,130,246,0.15);color:#3b82f6">8.2% Conv</div>
+            </div>
+            <div class="db-list-item">
+              <div class="db-list-dot" style="background:#FFA726"></div>
+              <div class="db-list-text">E-book Lead Magnet (A/B Test)</div>
+              <div class="db-list-badge" style="background:rgba(255,167,38,0.15);color:#FFA726">Running</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Overview -->
+<section class="feature-overview">
+  <div class="container">
+    <div class="feature-overview-grid">
+      <div class="reveal-right">
+        <div class="section-label">About Funnel Builder</div>
+        <h2 class="section-heading">Everything You Need to <span>Convert Visitors</span></h2>
+        <p class="section-subheading">Don't just build a website — build a highly optimized sales machine. TASQ's funnel builder gives you all the tools to turn cold traffic into paying customers seamlessly.</p>
+        
+        <div class="overview-bullets">
+          <div class="overview-bullet"><span class="overview-bullet-icon">🎨</span> Visual Editor</div>
+          <div class="overview-bullet"><span class="overview-bullet-icon">📱</span> Mobile Optimized</div>
+          <div class="overview-bullet"><span class="overview-bullet-icon">💳</span> 1-Click Upsells</div>
+          <div class="overview-bullet"><span class="overview-bullet-icon">📊</span> Conversion Tracking</div>
+          <div class="overview-bullet"><span class="overview-bullet-icon">🎭</span> Split Testing</div>
+          <div class="overview-bullet"><span class="overview-bullet-icon">🛒</span> Custom Checkouts</div>
+        </div>
+      </div>
+      <div class="feature-overview-img reveal-left">
+        <img src="../assets/images/funnel_dashboard.jpg" alt="Funnel Builder Dashboard" style="width:100%;border-radius:16px;box-shadow:var(--shadow-xl);">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Dashboard Preview (Live CSS Mockup) -->
+<section class="dashboard-preview-section reveal">
+  <div class="container">
+    <div class="dashboard-preview-header text-center">
+      <h2 class="section-heading" style="color:white;">Live Funnel <span>Builder Preview</span></h2>
+      <p class="section-subheading" style="color:rgba(255,255,255,0.7);">Create, manage, and optimize all your pages in one place</p>
+    </div>
+    
+    <div class="dashboard-mockup reveal-scale">
+      <div class="mockup-header">
+        <div class="mockup-dots"><span></span><span></span><span></span></div>
+        <div class="mockup-url">tasq.app / funnels / builder</div>
+      </div>
+      <div class="mockup-body">
+        <div style="display:flex;gap:1.5rem;height:300px;">
+          <!-- Left sidebar (elements) -->
+          <div style="width:200px;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.05);border-radius:12px;padding:1rem;">
+            <div style="font-family:var(--font-heading);font-weight:700;font-size:0.75rem;color:rgba(255,255,255,0.6);margin-bottom:1rem;">ELEMENTS</div>
+            <div style="display:flex;flex-direction:column;gap:0.5rem;">
+              <div style="background:rgba(255,255,255,0.05);padding:0.75rem;border-radius:6px;font-size:0.75rem;color:white;display:flex;align-items:center;gap:0.5rem;"><span style="color:#FFA726">T</span> Text Block</div>
+              <div style="background:rgba(255,255,255,0.05);padding:0.75rem;border-radius:6px;font-size:0.75rem;color:white;display:flex;align-items:center;gap:0.5rem;"><span style="color:#FFA726">🖼️</span> Image</div>
+              <div style="background:rgba(255,255,255,0.05);padding:0.75rem;border-radius:6px;font-size:0.75rem;color:white;display:flex;align-items:center;gap:0.5rem;"><span style="color:#FFA726">⏹️</span> Button</div>
+              <div style="background:rgba(255,255,255,0.05);padding:0.75rem;border-radius:6px;font-size:0.75rem;color:white;display:flex;align-items:center;gap:0.5rem;"><span style="color:#FFA726">📝</span> Form</div>
+              <div style="background:rgba(255,255,255,0.05);padding:0.75rem;border-radius:6px;font-size:0.75rem;color:white;display:flex;align-items:center;gap:0.5rem;"><span style="color:#FFA726">⏱️</span> Countdown</div>
+            </div>
+          </div>
+          <!-- Right main canvas (page builder) -->
+          <div style="flex:1;background:#fff;border-radius:12px;padding:2rem;position:relative;overflow:hidden;border:1px solid rgba(255,106,0,0.3);">
+            <div style="text-align:center;color:#333;margin-bottom:2rem;">
+              <h1 style="font-family:var(--font-heading);font-weight:900;font-size:2rem;margin-bottom:0.5rem;color:#111;">Register For The Masterclass</h1>
+              <p style="font-size:0.9rem;color:#666;">Learn the exact strategies we used to scale to 7-figures.</p>
+            </div>
+            <div style="max-width:300px;margin:0 auto;background:#f9f9f9;padding:1.5rem;border-radius:8px;border:1px dashed #ccc;text-align:center;">
+              <div style="background:#eee;height:30px;border-radius:4px;margin-bottom:0.5rem;"></div>
+              <div style="background:#eee;height:30px;border-radius:4px;margin-bottom:1rem;"></div>
+              <div style="background:var(--color-orange);height:40px;border-radius:4px;color:white;font-weight:bold;line-height:40px;font-size:0.85rem;">Reserve My Seat</div>
+            </div>
+            <!-- builder UI overlay -->
+            <div style="position:absolute;top:10px;right:10px;background:var(--color-black);padding:0.4rem 0.8rem;border-radius:6px;font-size:0.7rem;color:white;font-weight:bold;display:flex;gap:0.5rem;box-shadow:var(--shadow-sm);">
+              <span>💾 Save</span> | <span style="color:#22c55e;">▶ Preview</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Key Features -->
+<section class="key-features-section">
+  <div class="container">
+    <div class="text-center reveal">
+      <h2 class="section-heading">Built for <span>Conversion</span></h2>
+    </div>
+    <div class="key-features-grid reveal">
+      <div class="key-feature-item">
+        <div class="key-feature-icon">🖱️</div>
+        <div class="key-feature-content">
+          <h4>Drag-and-Drop Builder</h4>
+          <p>Create stunning pages easily without writing any code.</p>
+        </div>
+      </div>
+      <div class="key-feature-item">
+        <div class="key-feature-icon">📑</div>
+        <div class="key-feature-content">
+          <h4>Landing Page Templates</h4>
+          <p>Start fast with 100+ proven, high-converting templates.</p>
+        </div>
+      </div>
+      <div class="key-feature-item">
+        <div class="key-feature-icon">🔄</div>
+        <div class="key-feature-content">
+          <h4>Sales Funnels</h4>
+          <p>Link multiple pages to create seamless multi-step journeys.</p>
+        </div>
+      </div>
+      <div class="key-feature-item">
+        <div class="key-feature-icon">💳</div>
+        <div class="key-feature-content">
+          <h4>Checkout Pages</h4>
+          <p>Accept payments directly with high-converting checkout flows.</p>
+        </div>
+      </div>
+      <div class="key-feature-item">
+        <div class="key-feature-icon">🙏</div>
+        <div class="key-feature-content">
+          <h4>Thank You Pages</h4>
+          <p>Deliver digital products immediately after successful purchase.</p>
+        </div>
+      </div>
+      <div class="key-feature-item">
+        <div class="key-feature-icon">⚖️</div>
+        <div class="key-feature-content">
+          <h4>A/B Testing</h4>
+          <p>Test headlines, layouts, and offers to see what works best.</p>
+        </div>
+      </div>
+      <div class="key-feature-item">
+        <div class="key-feature-icon">📈</div>
+        <div class="key-feature-content">
+          <h4>Funnel Analytics</h4>
+          <p>Track visitors, conversions, and revenue at every step.</p>
+        </div>
+      </div>
+      <div class="key-feature-item">
+        <div class="key-feature-icon">🎯</div>
+        <div class="key-feature-content">
+          <h4>Conversion Tracking</h4>
+          <p>Integrate easily with Facebook Pixels and Google Analytics.</p>
+        </div>
+      </div>
+      <div class="key-feature-item">
+        <div class="key-feature-icon">📱</div>
+        <div class="key-feature-content">
+          <h4>Mobile Optimization</h4>
+          <p>Pages automatically adapt to look perfect on any device.</p>
+        </div>
+      </div>
+      <div class="key-feature-item">
+        <div class="key-feature-icon">📋</div>
+        <div class="key-feature-content">
+          <h4>Funnel Cloning</h4>
+          <p>Duplicate your successful funnels with a single click.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Benefits Grid -->
+<section class="benefits-section">
+  <div class="container">
+    <div class="text-center reveal">
+      <h2 class="section-heading">Why Use TASQ <span>Funnel Builder</span>?</h2>
+    </div>
+    <div class="benefits-grid reveal">
+      <div class="benefit-item">
+        <div class="benefit-item-icon">📈</div>
+        <h4>Increase Conversions</h4>
+        <p>Turn more of your traffic into leads and paying customers.</p>
+      </div>
+      <div class="benefit-item">
+        <div class="benefit-item-icon">🚀</div>
+        <h4>Launch Faster</h4>
+        <p>Go from idea to live funnel in minutes instead of weeks.</p>
+      </div>
+      <div class="benefit-item">
+        <div class="benefit-item-icon">💻</div>
+        <h4>No Coding Needed</h4>
+        <p>Empower your marketing team to build without developers.</p>
+      </div>
+      <div class="benefit-item">
+        <div class="benefit-item-icon">🎨</div>
+        <h4>Professional Templates</h4>
+        <p>Leverage designs proven to work in multiple industries.</p>
+      </div>
+      <div class="benefit-item">
+        <div class="benefit-item-icon">⚙️</div>
+        <h4>Easy Customization</h4>
+        <p>Make every page match your unique brand perfectly.</p>
+      </div>
+      <div class="benefit-item">
+        <div class="benefit-item-icon">📊</div>
+        <h4>Data-Driven Optimization</h4>
+        <p>Make smart decisions based on real split-test data.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Workflow Steps -->
+<section class="workflow-section">
+  <div class="container">
+    <div class="workflow-grid">
+      <div class="reveal-right">
+        <h2 class="section-heading">How It <span>Works</span></h2>
+        <div class="workflow-steps">
+          <div class="workflow-step">
+            <div class="workflow-step-num">1</div>
+            <div class="workflow-step-content">
+              <h4>Create Landing Page</h4>
+              <p>Choose a template and customize it using the visual editor.</p>
+            </div>
+          </div>
+          <div class="workflow-step">
+            <div class="workflow-step-num">2</div>
+            <div class="workflow-step-content">
+              <h4>Capture Leads</h4>
+              <p>Add opt-in forms that automatically sync to your TASQ CRM.</p>
+            </div>
+          </div>
+          <div class="workflow-step">
+            <div class="workflow-step-num">3</div>
+            <div class="workflow-step-content">
+              <h4>Sales Page</h4>
+              <p>Present your core offer with persuasive copy and video.</p>
+            </div>
+          </div>
+          <div class="workflow-step">
+            <div class="workflow-step-num">4</div>
+            <div class="workflow-step-content">
+              <h4>Checkout</h4>
+              <p>Accept secure payments with seamless 1-click upsells.</p>
+            </div>
+          </div>
+          <div class="workflow-step">
+            <div class="workflow-step-num">5</div>
+            <div class="workflow-step-content">
+              <h4>Thank You & Upsell</h4>
+              <p>Confirm the order and offer additional products instantly.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="reveal-left" style="display:flex;align-items:center;justify-content:center;">
+        <img src="../assets/images/funnel_dashboard.jpg" alt="Workflow Funnel" style="width:100%;border-radius:16px;box-shadow:var(--shadow-xl);">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Use Cases -->
+<section class="use-cases-section reveal">
+  <div class="container text-center">
+    <h2 class="section-heading" style="color:white;">Who is this for?</h2>
+    <div class="use-cases-chips">
+      <div class="use-case-chip"><span class="use-case-chip-icon">🎓</span> Online Courses</div>
+      <div class="use-case-chip"><span class="use-case-chip-icon">🎯</span> Agencies</div>
+      <div class="use-case-chip"><span class="use-case-chip-icon">🗣️</span> Coaches</div>
+      <div class="use-case-chip"><span class="use-case-chip-icon">🤝</span> Consultants</div>
+      <div class="use-case-chip"><span class="use-case-chip-icon">💻</span> SaaS Companies</div>
+      <div class="use-case-chip"><span class="use-case-chip-icon">🛍️</span> E-commerce</div>
+      <div class="use-case-chip"><span class="use-case-chip-icon">👤</span> Freelancers</div>
+      <div class="use-case-chip"><span class="use-case-chip-icon">🛠️</span> Service Businesses</div>
+    </div>
+  </div>
+</section>
+
+<!-- Testimonials -->
+<section class="testimonials-section reveal">
+  <div class="container">
+    <div class="text-center">
+      <h2 class="section-heading">Trusted by <span>Marketers</span></h2>
+    </div>
+    <div data-carousel style="margin-top:3rem;">
+      <div class="carousel-wrapper">
+        <div class="carousel-track">
+          <div data-carousel-item class="testimonial-card">
+            <div class="testimonial-stars">★★★★★</div>
+            <p class="testimonial-text">"The funnel builder is exceptional. We launched our first campaign in under 2 hours, and it's already converting at 12% — well above industry average."</p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">A</div>
+              <div>
+                <div class="testimonial-name">Amira Hassan</div>
+                <div class="testimonial-company">CoachUp Digital</div>
+              </div>
+            </div>
+          </div>
+          <div data-carousel-item class="testimonial-card">
+            <div class="testimonial-stars">★★★★★</div>
+            <p class="testimonial-text">"We ditched our expensive standalone funnel software. TASQ does it all, and the fact that it instantly connects to our CRM saves us from Zapier headaches."</p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">J</div>
+              <div>
+                <div class="testimonial-name">James Wilson</div>
+                <div class="testimonial-company">E-comm Accelerate</div>
+              </div>
+            </div>
+          </div>
+          <div data-carousel-item class="testimonial-card">
+            <div class="testimonial-stars">★★★★★</div>
+            <p class="testimonial-text">"A/B testing is a breeze. We tested two different headlines for our webinar registration page and found a winner that dropped our cost-per-lead by 40%."</p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">S</div>
+              <div>
+                <div class="testimonial-name">Sarah Chen</div>
+                <div class="testimonial-company">TechEdu Solutions</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-controls">
+        <button class="carousel-btn" data-carousel-prev>←</button>
+        <div class="carousel-dots">
+          <div class="carousel-dot active"></div>
+          <div class="carousel-dot"></div>
+          <div class="carousel-dot"></div>
+        </div>
+        <button class="carousel-btn" data-carousel-next>→</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq-section reveal">
+  <div class="container">
+    <div class="text-center">
+      <h2 class="section-heading">Frequently Asked <span>Questions</span></h2>
+    </div>
+    <div class="faq-grid" style="margin-top:2.5rem;max-width:800px;margin-left:auto;margin-right:auto;">
+      <div class="faq-item">
+        <button class="faq-question">Can I build unlimited funnels? <span class="faq-icon">+</span></button>
+        <div class="faq-answer"><div class="faq-answer-inner">Yes, all Professional and Enterprise plans include unlimited funnel creation with no restrictions on pages, steps, or traffic.</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">Are pre-built templates available? <span class="faq-icon">+</span></button>
+        <div class="faq-answer"><div class="faq-answer-inner">Yes, TASQ includes 100+ professionally designed templates for various industries and conversion goals. Start fast and customize everything.</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">How does A/B testing work? <span class="faq-icon">+</span></button>
+        <div class="faq-answer"><div class="faq-answer-inner">Create multiple variants of any page, split traffic automatically, and TASQ tracks which version converts better, allowing you to declare a winner.</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">Is mobile optimization included? <span class="faq-icon">+</span></button>
+        <div class="faq-answer"><div class="faq-answer-inner">Yes, all pages built with TASQ are automatically optimized for mobile devices with responsive designs, and you can tweak the mobile view separately.</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">Can I track conversions and revenue? <span class="faq-icon">+</span></button>
+        <div class="faq-answer"><div class="faq-answer-inner">Yes, the built-in analytics dashboard tracks visitors, conversions, revenue, and ROI for every single funnel and page.</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="section">
+  <div class="container">
+    <div class="cta-banner reveal">
+      <h2 class="cta-banner-title">Start Building Your First Funnel Today</h2>
+      <p class="cta-banner-desc">Stop losing leads to poorly designed websites. Build high-converting funnels with TASQ.</p>
+      <div class="cta-banner-btns">
+        <a href="../pricing.html" class="btn btn-dark btn-lg btn-ripple">View Pricing <span class="btn-arrow">→</span></a>
+        <a href="../contact.html" class="btn btn-ghost btn-lg btn-ripple">Contact Us <span class="btn-arrow">→</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Shared Footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="../index.html" class="nav-logo"><div class="logo-icon">T</div><span class="logo-text">TASQ</span></a>
+        <p>The all-in-one business automation platform that helps businesses grow faster and smarter.</p>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col"><h4>Features</h4><a href="crm.html">CRM</a><a href="funnel-builder.html">Funnel Builder</a><a href="social-media.html">Social Media</a><a href="marketing-automation.html">Marketing</a><a href="email-whatsapp.html">Email & WhatsApp</a><a href="calendar.html">Calendar</a></div>
+        <div class="footer-col"><h4>More Features</h4><a href="ai-bot.html">AI Bot</a><a href="analytics.html">Analytics</a><a href="reputation.html">Reputation</a><a href="invoices.html">Invoices</a><a href="memberships.html">Memberships</a><a href="integrations.html">Integrations</a></div>
+        <div class="footer-col"><h4>Company</h4><a href="../pricing.html">Pricing</a><a href="../contact.html">Contact</a></div>
+      </div>
+    </div>
+    <div class="footer-bottom"><p>© 2024 TASQ. All rights reserved.</p><p>Built for ambitious businesses.</p></div>
+  </div>
+</footer>
+
+<script src="../js/main.js" defer></script>
+<script src="../js/feature-detail.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="TASQ Pricing. Simple, transparent pricing for growing businesses. Choose the perfect plan to automate your workflows, manage customers, and scale.">
+  <title>Pricing – Simple, Transparent Plans | TASQ</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%23FF6A00'/><text x='50%25' y='54%25' dominant-baseline='middle' text-anchor='middle' font-family='Poppins,sans-serif' font-weight='900' font-size='20' fill='white'>T</text></svg>">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/navbar.css">
+  <link rel="stylesheet" href="css/pricing.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar" id="navbar">
+  <div class="nav-container">
+    <a href="index.html" class="nav-logo">
+      <div class="logo-icon">T</div>
+      <span class="logo-text">TASQ</span>
+    </a>
+    <div class="nav-links" id="navLinks">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="features.html" class="nav-link">Features</a>
+      <a href="pricing.html" class="nav-link active">Pricing</a>
+      <a href="contact.html" class="nav-link nav-cta">Contact</a>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <button class="mobile-close" id="mobileClose">✕</button>
+  <a href="index.html" class="mobile-nav-link">Home</a>
+  <a href="features.html" class="mobile-nav-link">Features</a>
+  <a href="pricing.html" class="mobile-nav-link">Pricing</a>
+  <a href="contact.html" class="mobile-nav-link">Contact</a>
+</div>
+<div class="mobile-overlay" id="mobileOverlay"></div>
+
+<!-- Pricing Hero -->
+<section class="pricing-hero">
+  
+  <div class="container" style="position:relative;z-index:1;">
+    <h1 class="reveal">Simple, <span>Transparent</span> Pricing</h1>
+    <p class="pricing-hero-desc reveal reveal-delay-1">Choose the perfect plan for your business. No hidden fees, no surprise charges, cancel anytime.</p>
+    
+    <div class="pricing-toggle-wrapper reveal reveal-delay-2">
+      <span class="toggle-label" id="label-monthly">Monthly</span>
+      <div class="toggle-switch" id="pricingToggle">
+        <div class="toggle-knob"></div>
+      </div>
+      <span class="toggle-label active" id="label-annual">Annually <span class="pricing-save-badge">Save 20%</span></span>
+    </div>
+  </div>
+</section>
+
+<!-- Pricing Grid -->
+<section class="pricing-section">
+  <div class="container">
+    <div class="pricing-grid">
+      <!-- Starter Plan -->
+      <div class="pricing-card reveal reveal-delay-1">
+        <div class="plan-name">Starter</div>
+        <div class="plan-price">
+          <span class="plan-currency">₹</span>
+          <span class="plan-amount" data-monthly="49" data-annual="39">39</span>
+          <span class="plan-period">/mo</span>
+        </div>
+        <p class="plan-desc">Perfect for small businesses and solo entrepreneurs getting started with automation.</p>
+        <div class="plan-features-list">
+          <div class="plan-feature"><div class="plan-feature-check check-yes">✓</div> Up to 2,500 Contacts</div>
+          <div class="plan-feature"><div class="plan-feature-check check-yes">✓</div> Basic CRM & Pipeline</div>
+          <div class="plan-feature"><div class="plan-feature-check check-yes">✓</div> 3 Active Funnels</div>
+          <div class="plan-feature"><div class="plan-feature-check check-yes">✓</div> Email Marketing (10k sends)</div>
+          <div class="plan-feature"><div class="plan-feature-check check-yes">✓</div> Standard Support</div>
+          <div class="plan-feature"><div class="plan-feature-check">✕</div> Advanced Automations</div>
+          <div class="plan-feature"><div class="plan-feature-check">✕</div> Custom Domain</div>
+        </div>
+        <a href="contact.html" class="btn btn-secondary btn-lg plan-cta btn-ripple">Get Started</a>
+      </div>
+
+      <!-- Professional Plan (Popular) -->
+      <div class="pricing-card popular reveal reveal-delay-2">
+        <div class="popular-badge">MOST POPULAR</div>
+        <div class="plan-name" style="color:var(--color-orange);">Professional</div>
+        <div class="plan-price">
+          <span class="plan-currency">₹</span>
+          <span class="plan-amount gradient-text" data-monthly="129" data-annual="99">99</span>
+          <span class="plan-period">/mo</span>
+        </div>
+        <p class="plan-desc">Everything you need to scale your growing business with advanced automation tools.</p>
+        <div class="plan-features-list">
+          <div class="plan-feature"><div class="plan-feature-check check-yes">✓</div> Up to 25,000 Contacts</div>
+          <div class="plan-feature"><div class="plan-feature-check check-yes">✓</div> Advanced CRM & Pipeline</div>
+          <div class="plan-feature"><div class="plan-feature-check check-yes">✓</div> Unlimited Funnels</div>
+          <div class="plan-feature"><div class="plan-feature-check check-yes">✓</div> Email & WhatsApp Marketing</div>
+          <div class="plan-feature"><div class="plan-feature-check check-yes">✓</div> Advanced Automations & API</div>
+          <div class="plan-feature"><div class="plan-feature-check check-yes">✓</div> Priority 24/7 Support</div>
+          <div class="plan-feature"><div class="plan-feature-check check-yes">✓</div> 3 Custom Domains</div>
+        </div>
+        <a href="contact.html" class="btn btn-primary btn-lg plan-cta btn-ripple">Start Free 14-Day Trial</a>
+      </div>
+
+      <!-- Enterprise Plan -->
+      <div class="pricing-card reveal reveal-delay-3">
+        <div class="plan-name">Enterprise</div>
+        <div class="plan-price">
+          <span class="plan-currency">₹</span>
+          <span class="plan-amount" data-monthly="299" data-annual="249">249</span>
+          <span class="plan-period">/mo</span>
+        </div>
+        <p class="plan-desc">For large teams and organizations requiring maximum power and dedicated support.</p>
+        <div class="plan-features-list">
+          <div class="plan-feature"><div class="plan-feature-check check-yes">✓</div> Unlimited Contacts</div>
+          <div class="plan-feature"><div class="plan-feature-check check-yes">✓</div> Unlimited Users & Roles</div>
+          <div class="plan-feature"><div class="plan-feature-check check-yes">✓</div> Unlimited Everything</div>
+          <div class="plan-feature"><div class="plan-feature-check check-yes">✓</div> Dedicated Account Manager</div>
+          <div class="plan-feature"><div class="plan-feature-check check-yes">✓</div> Custom Onboarding & Setup</div>
+          <div class="plan-feature"><div class="plan-feature-check check-yes">✓</div> Advanced Analytics & Reporting</div>
+          <div class="plan-feature"><div class="plan-feature-check check-yes">✓</div> Unlimited Custom Domains</div>
+        </div>
+        <a href="contact.html" class="btn btn-secondary btn-lg plan-cta btn-ripple">Contact Sales</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Pricing FAQ -->
+<section class="pricing-faq-section">
+  <div class="container">
+    <div class="text-center reveal" style="max-width:600px;margin:0 auto 3rem;">
+      <div class="section-label">FAQ</div>
+      <h2 class="section-heading">Frequently Asked <span>Questions</span></h2>
+    </div>
+    <div class="faq-grid reveal">
+      <div class="faq-item">
+        <button class="faq-question">Can I switch plans later? <span class="faq-icon">+</span></button>
+        <div class="faq-answer"><div class="faq-answer-inner">Absolutely! You can upgrade or downgrade your plan at any time right from your account dashboard. Prorated charges will be applied automatically.</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">What payment methods do you accept? <span class="faq-icon">+</span></button>
+        <div class="faq-answer"><div class="faq-answer-inner">We accept all major credit cards (Visa, Mastercard, American Express) as well as PayPal and wire transfers for Enterprise annual plans.</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">Is there a long-term contract? <span class="faq-icon">+</span></button>
+        <div class="faq-answer"><div class="faq-answer-inner">No, there are no long-term commitments or lock-in contracts on the monthly plans. You can cancel your subscription at any time without penalty.</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">Do you offer discounts for non-profits? <span class="faq-icon">+</span></button>
+        <div class="faq-answer"><div class="faq-answer-inner">Yes! We offer a 30% discount for registered non-profit organizations and educational institutions. Please contact our support team to apply.</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">What happens if I exceed my contact limit? <span class="faq-icon">+</span></button>
+        <div class="faq-answer"><div class="faq-answer-inner">We'll notify you when you approach your limit. If you exceed it, your account will continue to function normally, but we will ask you to upgrade to the next tier for the following billing cycle.</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo"><div class="logo-icon">T</div><span class="logo-text">TASQ</span></a>
+        <p>The all-in-one business automation platform that helps businesses grow faster and smarter.</p>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col"><h4>Features</h4><a href="features/crm.html">CRM</a><a href="features/funnel-builder.html">Funnel Builder</a><a href="features/social-media.html">Social Media</a><a href="features/marketing-automation.html">Marketing</a><a href="features/email-whatsapp.html">Email & WhatsApp</a><a href="features/calendar.html">Calendar</a></div>
+        <div class="footer-col"><h4>More Features</h4><a href="features/ai-bot.html">AI Bot</a><a href="features/analytics.html">Analytics</a><a href="features/reputation.html">Reputation</a><a href="features/invoices.html">Invoices</a><a href="features/memberships.html">Memberships</a><a href="features/integrations.html">Integrations</a></div>
+        <div class="footer-col"><h4>Company</h4><a href="features.html">Features</a><a href="pricing.html">Pricing</a><a href="contact.html">Contact</a></div>
+      </div>
+    </div>
+    <div class="footer-bottom"><p>© 2024 TASQ. All rights reserved.</p><p>Built for ambitious businesses.</p></div>
+  </div>
+</footer>
+
+<script src="js/main.js" defer></script>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const toggle = document.getElementById('pricingToggle');
+  const labelMonthly = document.getElementById('label-monthly');
+  const labelAnnual = document.getElementById('label-annual');
+  const amounts = document.querySelectorAll('.plan-amount');
+  
+  // Set initial state (annual is default)
+  let isAnnual = true;
+  toggle.classList.add('annual');
+  labelAnnual.classList.add('active');
+  labelMonthly.classList.remove('active');
+
+  const updatePrices = () => {
+    amounts.forEach(amount => {
+      amount.textContent = isAnnual ? amount.getAttribute('data-annual') : amount.getAttribute('data-monthly');
+    });
+  };
+
+  const handleToggle = () => {
+    isAnnual = !isAnnual;
+    toggle.classList.toggle('annual', isAnnual);
+    labelAnnual.classList.toggle('active', isAnnual);
+    labelMonthly.classList.toggle('active', !isAnnual);
+    updatePrices();
+  };
+
+  toggle.addEventListener('click', handleToggle);
+  labelMonthly.addEventListener('click', () => { if(isAnnual) handleToggle(); });
+  labelAnnual.addEventListener('click', () => { if(!isAnnual) handleToggle(); });
+});
+</script>
+</body>
+</html>

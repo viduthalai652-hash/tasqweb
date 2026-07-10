@@ -1,0 +1,402 @@
+/* ============================================
+   TASQ – Home Page Styles
+   ============================================ */
+
+/* ── Hero Section ── */
+.hero {
+  min-height: 100vh;
+  background: var(--color-white);
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  padding: 7rem 0 5rem;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: -30%;
+  right: -15%;
+  width: 900px;
+  height: 900px;
+  background: radial-gradient(circle, rgba(255,106,0,0.18) 0%, transparent 65%);
+  pointer-events: none;
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  bottom: -30%;
+  left: -10%;
+  width: 700px;
+  height: 700px;
+  background: radial-gradient(circle, rgba(255,140,26,0.12) 0%, transparent 65%);
+  pointer-events: none;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+.hero-content {
+  color: var(--color-black);
+}
+
+.hero-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(255,106,0,0.12);
+  border: 1px solid rgba(255,106,0,0.25);
+  border-radius: var(--radius-full);
+  padding: 0.4rem 1rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  font-family: var(--font-heading);
+  color: var(--color-orange-light);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+  animation: fadeInUp 0.6s ease both;
+}
+
+.hero-eyebrow-dot {
+  width: 6px;
+  height: 6px;
+  background: var(--color-orange);
+  border-radius: 50%;
+  animation: pulse 2s ease-in-out infinite;
+}
+
+.hero-title {
+  font-family: var(--font-heading);
+  font-weight: 900;
+  font-size: 3.75rem;
+  line-height: 1.1;
+  color: var(--color-black);
+  letter-spacing: -0.03em;
+  margin-bottom: 1.5rem;
+  animation: fadeInUp 0.7s 0.1s ease both;
+}
+
+.hero-title span {
+  background: var(--gradient-orange);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  background-size: 200% 200%;
+  animation: gradientShift 4s ease infinite;
+}
+
+.hero-subtitle {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.8;
+  margin-bottom: 1rem;
+  max-width: 540px;
+  animation: fadeInUp 0.7s 0.2s ease both;
+}
+
+.hero-desc {
+  font-size: 0.9rem;
+  color: #666;
+  line-height: 1.75;
+  margin-bottom: 2.25rem;
+  max-width: 500px;
+  animation: fadeInUp 0.7s 0.3s ease both;
+}
+
+.hero-btns {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  animation: fadeInUp 0.7s 0.4s ease both;
+  margin-bottom: 2.5rem;
+}
+
+.hero-trust {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  animation: fadeInUp 0.7s 0.5s ease both;
+}
+
+.hero-avatars {
+  display: flex;
+}
+
+.hero-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 2px solid rgba(255,255,255,0.2);
+  background: var(--gradient-orange);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: white;
+  font-family: var(--font-heading);
+  margin-right: -8px;
+}
+
+.hero-trust-text {
+  font-size: 0.8rem;
+  color: #666;
+  font-family: var(--font-heading);
+}
+
+.hero-trust-text strong {
+  color: var(--color-orange-light);
+}
+
+.hero-visual {
+  position: relative;
+  animation: fadeInRight 0.8s 0.3s ease both;
+}
+
+/* ── Stats Section ── */
+.stats-section {
+  background: var(--color-white);
+  padding: var(--space-20) 0;
+  border-bottom: 1px solid rgba(255,106,0,0.08);
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 1rem;
+}
+
+.stat-item {
+  text-align: center;
+  padding: 1.5rem 0.75rem;
+  border-radius: var(--radius-lg);
+  transition: transform var(--transition-base);
+}
+
+.stat-item:hover {
+  transform: translateY(-4px);
+}
+
+.stat-item-num {
+  font-family: var(--font-heading);
+  font-weight: 900;
+  font-size: 2rem;
+  background: var(--gradient-orange);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  line-height: 1;
+  margin-bottom: 0.4rem;
+}
+
+.stat-item-label {
+  font-size: 0.78rem;
+  color: #888;
+  font-weight: 600;
+  font-family: var(--font-heading);
+  letter-spacing: 0.02em;
+}
+
+/* ── About Section ── */
+.about-section {
+  padding: var(--space-24) 0;
+  background: var(--color-white-warm);
+}
+
+.about-bullets {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+  margin: 1.5rem 0 2rem;
+}
+
+.about-bullet {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 0.875rem;
+  color: #444;
+  font-family: var(--font-heading);
+  font-weight: 500;
+}
+
+.about-bullet::before {
+  content: '';
+  width: 20px;
+  height: 20px;
+  background: var(--gradient-orange);
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  background-image: var(--gradient-orange);
+}
+
+.about-bullet-icon {
+  width: 22px;
+  height: 22px;
+  background: var(--gradient-orange);
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.7rem;
+  flex-shrink: 0;
+  box-shadow: var(--shadow-orange);
+}
+
+.about-img-wrapper {
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  box-shadow: var(--shadow-xl), 0 0 60px rgba(255,106,0,0.15);
+  animation: float 8s ease-in-out infinite;
+  position: relative;
+}
+
+.about-img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ── Services Section ── */
+.services-section {
+  padding: var(--space-24) 0;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-top: 3rem;
+}
+
+/* ── Features Preview ── */
+.features-preview {
+  padding: var(--space-24) 0;
+  background: var(--color-white-tint);
+}
+
+.features-preview-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-top: 3rem;
+}
+
+.features-preview-cta {
+  text-align: center;
+  margin-top: 2.5rem;
+}
+
+/* ── Achievements / Timeline ── */
+.achievements-section {
+  background: var(--color-white-warm);
+  padding: var(--space-20) 0;
+  overflow: hidden;
+  position: relative;
+}
+
+.achievements-section::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(255,106,0,0.1) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.achievements-track {
+  display: flex;
+  gap: 2rem;
+  animation: none;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.achievement-item {
+  text-align: center;
+  padding: 2rem 2.5rem;
+  background: rgba(255,255,255,0.05);
+  border-radius: var(--radius-xl);
+  border: 1px solid rgba(255,106,0,0.15);
+  min-width: 160px;
+  transition: transform var(--transition-base), border-color var(--transition-base);
+}
+
+.achievement-item:hover {
+  transform: translateY(-6px);
+  border-color: rgba(255,106,0,0.4);
+}
+
+.achievement-num {
+  font-family: var(--font-heading);
+  font-weight: 900;
+  font-size: 2.25rem;
+  background: var(--gradient-orange);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  line-height: 1;
+  margin-bottom: 0.5rem;
+}
+
+.achievement-label {
+  font-size: 0.8rem;
+  color: #666;
+  font-family: var(--font-heading);
+  font-weight: 500;
+}
+
+/* ── Testimonials ── */
+.testimonials-section {
+  padding: var(--space-24) 0;
+  background: var(--color-white-warm);
+}
+
+/* ── Final CTA ── */
+.final-cta-section {
+  padding: var(--space-24) 0;
+}
+
+/* ── Home Responsive ── */
+@media (max-width: 1280px) {
+  .stats-grid { grid-template-columns: repeat(3, 1fr); }
+}
+
+@media (max-width: 1024px) {
+  .hero-grid { grid-template-columns: 1fr; }
+  .hero-title { font-size: 2.75rem; }
+  .stats-grid { grid-template-columns: repeat(3, 1fr); }
+  .services-grid { grid-template-columns: repeat(2, 1fr); }
+  .features-preview-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 768px) {
+  .hero-title { font-size: 2.25rem; }
+  .hero-btns { flex-direction: column; align-items: flex-start; }
+  .stats-grid { grid-template-columns: repeat(2, 1fr); }
+  .about-bullets { grid-template-columns: 1fr; }
+  .services-grid { grid-template-columns: 1fr; }
+  .features-preview-grid { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 480px) {
+  .hero-title { font-size: 1.85rem; }
+  .stats-grid { grid-template-columns: 1fr 1fr; }
+  .achievements-track { gap: 1rem; }
+  .achievement-item { min-width: 130px; padding: 1.5rem; }
+}

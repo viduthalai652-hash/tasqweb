@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Manage contacts, track leads, and close deals faster with TASQ's powerful CRM platform.">
+  <title>CRM – Customer Relationship Management | TASQ</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%23FF6A00'/><text x='50%25' y='54%25' dominant-baseline='middle' text-anchor='middle' font-family='Poppins,sans-serif' font-weight='900' font-size='20' fill='white'>T</text></svg>">
+  <link rel="stylesheet" href="../css/variables.css">
+  <link rel="stylesheet" href="../css/animations.css">
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="../css/navbar.css">
+  <link rel="stylesheet" href="../css/feature-detail.css">
+</head>
+<body>
+
+<!-- Shared Navbar -->
+<nav class="navbar" id="navbar">
+  <div class="nav-container">
+    <a href="../index.html" class="nav-logo">
+      <div class="logo-icon">T</div>
+      <span class="logo-text">TASQ</span>
+    </a>
+    <div class="nav-links" id="navLinks">
+      <a href="../features.html" class="nav-link active">Features</a>
+      <a href="../pricing.html" class="nav-link">Pricing</a>
+      <a href="../contact.html" class="nav-link nav-cta">Contact</a>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <button class="mobile-close" id="mobileClose">✕</button>
+  <a href="../index.html" class="mobile-nav-link">Home</a>
+  <a href="../features.html" class="mobile-nav-link">Features</a>
+  <a href="../pricing.html" class="mobile-nav-link">Pricing</a>
+  <a href="../contact.html" class="mobile-nav-link">Contact</a>
+</div>
+<div class="mobile-overlay" id="mobileOverlay"></div>
+
+<!-- Feature Hero -->
+<section class="feature-hero">
+  <div class="particles-container"></div>
+  <div class="container">
+    <div class="feature-hero-grid">
+      <!-- Left -->
+      <div class="feature-hero-content">
+        <div class="feature-badge reveal"><span class="feature-badge-dot"></span> 🎯 CRM Platform</div>
+        <h1 class="reveal reveal-delay-1">Customer Relationship <span>Management</span></h1>
+        <p class="feature-hero-desc reveal reveal-delay-2">Organize customer information, track leads, manage sales pipelines, and build stronger relationships with TASQ's intelligent CRM — all from one centralized dashboard.</p>
+        
+        <div class="feature-hero-highlights reveal reveal-delay-3">
+          <div class="hero-highlight"><span class="hero-highlight-icon">✓</span> Smart Contact Management</div>
+          <div class="hero-highlight"><span class="hero-highlight-icon">✓</span> Visual Sales Pipeline</div>
+          <div class="hero-highlight"><span class="hero-highlight-icon">✓</span> Automated Follow-ups</div>
+        </div>
+        
+        <div class="feature-hero-btns reveal reveal-delay-4">
+          <a href="../pricing.html" class="btn btn-primary btn-lg btn-ripple">View Pricing <span class="btn-arrow">→</span></a>
+          <a href="../contact.html" class="btn btn-secondary btn-lg btn-ripple">Contact Us <span class="btn-arrow">→</span></a>
+        </div>
+      </div>
+      
+      <!-- Right (Dashboard) -->
+      <div class="hero-dashboard reveal-left reveal-delay-2">
+        <div class="db-header">
+          <div class="db-dots"><span></span><span></span><span></span></div>
+          <div class="db-title">CRM Dashboard</div>
+          <div class="db-badge">● Live</div>
+        </div>
+        <div class="db-body">
+          <div class="db-metrics">
+            <div class="db-metric">
+              <div class="db-metric-val">1,240</div>
+              <div class="db-metric-label">Contacts</div>
+            </div>
+            <div class="db-metric">
+              <div class="db-metric-val">48</div>
+              <div class="db-metric-label">Active Deals</div>
+            </div>
+            <div class="db-metric">
+              <div class="db-metric-val">$128K</div>
+              <div class="db-metric-label">Revenue</div>
+            </div>
+            <div class="db-metric">
+              <div class="db-metric-val">92%</div>
+              <div class="db-metric-label">Close Rate</div>
+            </div>
+          </div>
+          
+          <div class="db-chart">
+            <div style="font-size:0.6rem;color:rgba(255,255,255,0.45);font-family:var(--font-heading);margin-bottom:0.5rem;font-weight:600;text-transform:uppercase;">MONTHLY DEALS</div>
+            <div class="chart-bars">
+              <div class="chart-bar" style="--h:60%;--i:0"></div>
+              <div class="chart-bar" style="--h:75%;--i:1"></div>
+              <div class="chart-bar" style="--h:50%;--i:2"></div>
+              <div class="chart-bar" style="--h:85%;--i:3"></div>
+              <div class="chart-bar" style="--h:70%;--i:4"></div>
+              <div class="chart-bar" style="--h:90%;--i:5"></div>
+            </div>
+          </div>
+          
+          <div class="db-list">
+            <div class="db-list-item">
+              <div class="db-list-dot" style="background:#22c55e"></div>
+              <div class="db-list-text">James Wilson → Enterprise Deal $45K Active</div>
+              <div class="db-list-badge" style="background:rgba(34,197,94,0.15);color:#22c55e">Active</div>
+            </div>
+            <div class="db-list-item">
+              <div class="db-list-dot" style="background:#ef4444"></div>
+              <div class="db-list-text">Sarah Chen → Follow-up Due Today</div>
+              <div class="db-list-badge" style="background:rgba(239,68,68,0.15);color:#ef4444">Due</div>
+            </div>
+            <div class="db-list-item">
+              <div class="db-list-dot" style="background:#3b82f6"></div>
+              <div class="db-list-text">Robert Kim → Proposal Sent</div>
+              <div class="db-list-badge" style="background:rgba(59,130,246,0.15);color:#3b82f6">Sent</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Overview -->
+<section class="feature-overview">
+  <div class="container">
+    <div class="feature-overview-grid">
+      <div class="reveal-right">
+        <div class="section-label">About CRM</div>
+        <h2 class="section-heading">Everything You Need to Manage <span>Customer Relationships</span></h2>
+        <p class="section-subheading">TASQ CRM centralizes all your customer data, sales activities, and communication history in one place. Track every interaction, never miss a follow-up, and close deals faster with intelligent pipeline management.</p>
+        
+        <div class="overview-bullets">
+          <div class="overview-bullet"><span class="overview-bullet-icon">📊</span> 360° Customer View</div>
+          <div class="overview-bullet"><span class="overview-bullet-icon">🔄</span> Pipeline Automation</div>
+          <div class="overview-bullet"><span class="overview-bullet-icon">📅</span> Smart Follow-ups</div>
+          <div class="overview-bullet"><span class="overview-bullet-icon">📈</span> Revenue Forecasting</div>
+          <div class="overview-bullet"><span class="overview-bullet-icon">👥</span> Team Collaboration</div>
+          <div class="overview-bullet"><span class="overview-bullet-icon">📎</span> File & Notes Management</div>
+        </div>
+      </div>
+      <div class="feature-overview-img reveal-left">
+        <img src="../assets/images/crm_dashboard.jpg" alt="CRM Dashboard" style="width:100%;border-radius:16px;box-shadow:var(--shadow-xl);">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Dashboard Preview (Live CSS Mockup) -->
+<section class="dashboard-preview-section reveal">
+  <div class="container">
+    <div class="dashboard-preview-header text-center">
+      <h2 class="section-heading" style="color:white;">Live CRM <span>Dashboard Preview</span></h2>
+      <p class="section-subheading" style="color:rgba(255,255,255,0.7);">See your entire sales operation at a glance</p>
+    </div>
+    
+    <div class="dashboard-mockup reveal-scale">
+      <div class="mockup-header">
+        <div class="mockup-dots"><span></span><span></span><span></span></div>
+        <div class="mockup-url">tasq.app / crm / dashboard</div>
+      </div>
+      <div class="mockup-body">
+        <div class="mockup-grid-4">
+          <div class="mockup-card">
+            <div class="mockup-card-label">Total Contacts</div>
+            <div class="mockup-card-value">1,240</div>
+            <div class="mockup-card-sub"><span class="trend-up">↑ 12%</span> vs last month</div>
+          </div>
+          <div class="mockup-card">
+            <div class="mockup-card-label">Active Deals</div>
+            <div class="mockup-card-value">48 <span style="font-size:0.9rem;font-weight:600;color:#888;">($284K value)</span></div>
+            <div class="mockup-card-sub"><span class="trend-up">↑ 5%</span> vs last month</div>
+          </div>
+          <div class="mockup-card">
+            <div class="mockup-card-label">Close Rate</div>
+            <div class="mockup-card-value">92%</div>
+            <div class="mockup-card-sub"><span class="trend-up">↑ 5%</span> vs last month</div>
+          </div>
+          <div class="mockup-card">
+            <div class="mockup-card-label">Tasks Due Today</div>
+            <div class="mockup-card-value">24</div>
+            <div class="mockup-card-sub" style="color:var(--color-orange);">5 High Priority</div>
+          </div>
+        </div>
+        
+        <div class="mockup-grid-2" style="margin-top:1.5rem;gap:1.5rem;grid-template-columns:1fr 1.5fr;">
+          <!-- Left: Pipeline Chart -->
+          <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.05);border-radius:12px;padding:1.5rem;">
+            <div style="font-family:var(--font-heading);font-weight:700;font-size:0.85rem;color:rgba(255,255,255,0.6);margin-bottom:1rem;">DEALS PIPELINE</div>
+            <div class="chart-bars" style="height:140px;align-items:flex-end;">
+              <div class="chart-bar" style="--h:40%;--i:0"></div>
+              <div class="chart-bar" style="--h:70%;--i:1"></div>
+              <div class="chart-bar" style="--h:85%;--i:2"></div>
+              <div class="chart-bar" style="--h:65%;--i:3"></div>
+            </div>
+            <div style="display:flex;justify-content:space-between;margin-top:0.75rem;font-size:0.65rem;color:rgba(255,255,255,0.4);font-family:var(--font-heading);text-transform:uppercase;">
+              <span>Lead</span><span>Qual</span><span>Prop</span><span>Won</span>
+            </div>
+          </div>
+          
+          <!-- Right: Visual Pipeline Kanban -->
+          <div style="background:rgba(255,255,255,0.03);border-radius:16px;padding:1.5rem;border:1px solid rgba(255,106,0,0.2);">
+            <div style="font-family:var(--font-heading);font-weight:700;font-size:0.85rem;color:rgba(255,255,255,0.6);margin-bottom:1rem;">SALES PIPELINE</div>
+            <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:0.5rem;">
+              <div style="text-align:center;">
+                <div style="background:rgba(255,255,255,0.06);border-radius:8px;padding:0.75rem 0.5rem;margin-bottom:0.5rem;">
+                  <div style="font-size:0.65rem;color:rgba(255,255,255,0.5);margin-bottom:0.3rem;font-family:var(--font-heading);">LEAD</div>
+                  <div style="font-size:1.5rem;font-weight:800;color:#FFA726;font-family:var(--font-heading);">24</div>
+                </div>
+                <div style="background:rgba(255,167,38,0.15);border-radius:6px;padding:0.4rem;margin-bottom:0.3rem;font-size:0.65rem;color:#FFA726;font-family:var(--font-heading);">John Smith</div>
+                <div style="background:rgba(255,167,38,0.15);border-radius:6px;padding:0.4rem;margin-bottom:0.3rem;font-size:0.65rem;color:#FFA726;font-family:var(--font-heading);">Emily Davis</div>
+              </div>
+              <div style="text-align:center;">
+                <div style="background:rgba(255,255,255,0.06);border-radius:8px;padding:0.75rem 0.5rem;margin-bottom:0.5rem;">
+                  <div style="font-size:0.65rem;color:rgba(255,255,255,0.5);margin-bottom:0.3rem;font-family:var(--font-heading);">QUALIFIED</div>
+                  <div style="font-size:1.5rem;font-weight:800;color:#FF8C1A;font-family:var(--font-heading);">18</div>
+                </div>
+                <div style="background:rgba(255,140,26,0.15);border-radius:6px;padding:0.4rem;margin-bottom:0.3rem;font-size:0.65rem;color:#FF8C1A;font-family:var(--font-heading);">Tech Corp</div>
+                <div style="background:rgba(255,140,26,0.15);border-radius:6px;padding:0.4rem;margin-bottom:0.3rem;font-size:0.65rem;color:#FF8C1A;font-family:var(--font-heading);">StartupXYZ</div>
+              </div>
+              <div style="text-align:center;">
+                <div style="background:rgba(255,255,255,0.06);border-radius:8px;padding:0.75rem 0.5rem;margin-bottom:0.5rem;">
+                  <div style="font-size:0.65rem;color:rgba(255,255,255,0.5);margin-bottom:0.3rem;font-family:var(--font-heading);">PROPOSAL</div>
+                  <div style="font-size:1.5rem;font-weight:800;color:#FF6A00;font-family:var(--font-heading);">12</div>
+                </div>
+                <div style="background:rgba(255,106,0,0.15);border-radius:6px;padding:0.4rem;margin-bottom:0.3rem;font-size:0.65rem;color:#FF6A00;font-family:var(--font-heading);">Agency Pro</div>
+              </div>
+              <div style="text-align:center;">
+                <div style="background:rgba(255,255,255,0.06);border-radius:8px;padding:0.75rem 0.5rem;margin-bottom:0.5rem;">
+                  <div style="font-size:0.65rem;color:rgba(255,255,255,0.5);margin-bottom:0.3rem;font-family:var(--font-heading);">WON</div>
+                  <div style="font-size:1.5rem;font-weight:800;color:#22c55e;font-family:var(--font-heading);">8</div>
+                </div>
+                <div style="background:rgba(34,197,94,0.15);border-radius:6px;padding:0.4rem;margin-bottom:0.3rem;font-size:0.65rem;color:#22c55e;font-family:var(--font-heading);">✓ Closed Deal</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Key Features -->
+<section class="key-features-section">
+  <div class="container">
+    <div class="text-center reveal">
+      <h2 class="section-heading">Built for <span>Sales Success</span></h2>
+    </div>
+    <div class="key-features-grid reveal">
+      <div class="key-feature-item">
+        <div class="key-feature-icon">📋</div>
+        <div class="key-feature-content">
+          <h4>Contact Management</h4>
+          <p>Store and organize all customer data in one searchable database.</p>
+        </div>
+      </div>
+      <div class="key-feature-item">
+        <div class="key-feature-icon">📊</div>
+        <div class="key-feature-content">
+          <h4>Sales Pipeline</h4>
+          <p>Visualize your entire sales process with a drag-and-drop Kanban view.</p>
+        </div>
+      </div>
+      <div class="key-feature-item">
+        <div class="key-feature-icon">🎯</div>
+        <div class="key-feature-content">
+          <h4>Lead Tracking</h4>
+          <p>Capture and qualify leads automatically from multiple sources.</p>
+        </div>
+      </div>
+      <div class="key-feature-item">
+        <div class="key-feature-icon">✅</div>
+        <div class="key-feature-content">
+          <h4>Task Management</h4>
+          <p>Create tasks, set deadlines, and assign work to team members.</p>
+        </div>
+      </div>
+      <div class="key-feature-item">
+        <div class="key-feature-icon">🔔</div>
+        <div class="key-feature-content">
+          <h4>Follow-up Reminders</h4>
+          <p>Never miss a follow-up with intelligent reminder notifications.</p>
+        </div>
+      </div>
+      <div class="key-feature-item">
+        <div class="key-feature-icon">👥</div>
+        <div class="key-feature-content">
+          <h4>Team Collaboration</h4>
+          <p>Work together with shared notes, tasks, and customer history.</p>
+        </div>
+      </div>
+      <div class="key-feature-item">
+        <div class="key-feature-icon">📅</div>
+        <div class="key-feature-content">
+          <h4>Activity Timeline</h4>
+          <p>See every interaction with each customer in chronological order.</p>
+        </div>
+      </div>
+      <div class="key-feature-item">
+        <div class="key-feature-icon">📎</div>
+        <div class="key-feature-content">
+          <h4>Notes & Attachments</h4>
+          <p>Attach files, contracts, and notes directly to contacts.</p>
+        </div>
+      </div>
+      <div class="key-feature-item">
+        <div class="key-feature-icon">🎯</div>
+        <div class="key-feature-content">
+          <h4>Customer Segmentation</h4>
+          <p>Group contacts by industry, status, or custom criteria.</p>
+        </div>
+      </div>
+      <div class="key-feature-item">
+        <div class="key-feature-icon">💰</div>
+        <div class="key-feature-content">
+          <h4>Deal Tracking</h4>
+          <p>Monitor deal values, stages, and expected close dates.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Benefits Grid -->
+<section class="benefits-section">
+  <div class="container">
+    <div class="text-center reveal">
+      <h2 class="section-heading">Why Use TASQ <span>CRM</span>?</h2>
+    </div>
+    <div class="benefits-grid reveal">
+      <div class="benefit-item">
+        <div class="benefit-item-icon">⚡</div>
+        <h4>Faster Response</h4>
+        <p>Respond to customers 3x faster with instant access to all information.</p>
+      </div>
+      <div class="benefit-item">
+        <div class="benefit-item-icon">👁️</div>
+        <h4>Sales Visibility</h4>
+        <p>Get a complete view of your pipeline and revenue forecasts.</p>
+      </div>
+      <div class="benefit-item">
+        <div class="benefit-item-icon">📁</div>
+        <h4>Organized Records</h4>
+        <p>Keep all customer data organized and easily searchable.</p>
+      </div>
+      <div class="benefit-item">
+        <div class="benefit-item-icon">📈</div>
+        <h4>Higher Conversions</h4>
+        <p>Increase deal close rates with better follow-up management.</p>
+      </div>
+      <div class="benefit-item">
+        <div class="benefit-item-icon">😊</div>
+        <h4>Customer Satisfaction</h4>
+        <p>Build stronger relationships by knowing your customers deeply.</p>
+      </div>
+      <div class="benefit-item">
+        <div class="benefit-item-icon">🤝</div>
+        <h4>Team Productivity</h4>
+        <p>Eliminate duplicate work with shared CRM access for your team.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Workflow Steps -->
+<section class="workflow-section">
+  <div class="container">
+    <div class="workflow-grid">
+      <div class="reveal-right">
+        <h2 class="section-heading">How It <span>Works</span></h2>
+        <div class="workflow-steps">
+          <div class="workflow-step">
+            <div class="workflow-step-num">1</div>
+            <div class="workflow-step-content">
+              <h4>Add Customer</h4>
+              <p>Import or manually add contact information to the CRM.</p>
+            </div>
+          </div>
+          <div class="workflow-step">
+            <div class="workflow-step-num">2</div>
+            <div class="workflow-step-content">
+              <h4>Track Interactions</h4>
+              <p>Log calls, emails, meetings, and notes automatically.</p>
+            </div>
+          </div>
+          <div class="workflow-step">
+            <div class="workflow-step-num">3</div>
+            <div class="workflow-step-content">
+              <h4>Manage Pipeline</h4>
+              <p>Move deals through your customized sales stages.</p>
+            </div>
+          </div>
+          <div class="workflow-step">
+            <div class="workflow-step-num">4</div>
+            <div class="workflow-step-content">
+              <h4>Schedule Follow-ups</h4>
+              <p>Set automated reminders for timely follow-ups.</p>
+            </div>
+          </div>
+          <div class="workflow-step">
+            <div class="workflow-step-num">5</div>
+            <div class="workflow-step-content">
+              <h4>Close Deals</h4>
+              <p>Convert prospects to customers and track your revenue growth.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="reveal-left" style="display:flex;align-items:center;justify-content:center;">
+        <img src="../assets/images/crm_dashboard.jpg" alt="Workflow CRM" style="width:100%;border-radius:16px;box-shadow:var(--shadow-xl);">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Use Cases -->
+<section class="use-cases-section reveal">
+  <div class="container text-center">
+    <h2 class="section-heading" style="color:white;">Who is this for?</h2>
+    <div class="use-cases-chips">
+      <div class="use-case-chip"><span class="use-case-chip-icon">💼</span> Sales Teams</div>
+      <div class="use-case-chip"><span class="use-case-chip-icon">🎯</span> Agencies</div>
+      <div class="use-case-chip"><span class="use-case-chip-icon">🤝</span> Consultants</div>
+      <div class="use-case-chip"><span class="use-case-chip-icon">🛠️</span> Service Providers</div>
+      <div class="use-case-chip"><span class="use-case-chip-icon">🚀</span> Startups</div>
+      <div class="use-case-chip"><span class="use-case-chip-icon">🏢</span> Enterprises</div>
+      <div class="use-case-chip"><span class="use-case-chip-icon">👤</span> Freelancers</div>
+      <div class="use-case-chip"><span class="use-case-chip-icon">🏥</span> Healthcare</div>
+    </div>
+  </div>
+</section>
+
+<!-- Testimonials -->
+<section class="testimonials-section reveal">
+  <div class="container">
+    <div class="text-center">
+      <h2 class="section-heading">Trusted by <span>Sales Leaders</span></h2>
+    </div>
+    <div data-carousel style="margin-top:3rem;">
+      <div class="carousel-wrapper">
+        <div class="carousel-track">
+          <div data-carousel-item class="testimonial-card">
+            <div class="testimonial-stars">★★★★★</div>
+            <p class="testimonial-text">"TASQ CRM transformed how we manage our client relationships. We've seen a 40% increase in deal closure rates since implementing it."</p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">M</div>
+              <div>
+                <div class="testimonial-name">Marcus Thompson</div>
+                <div class="testimonial-company">GrowthLab Agency</div>
+              </div>
+            </div>
+          </div>
+          <div data-carousel-item class="testimonial-card">
+            <div class="testimonial-stars">★★★★★</div>
+            <p class="testimonial-text">"The pipeline visualization alone is worth it. Our sales team finally has full visibility into every deal stage and never misses a follow-up."</p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">P</div>
+              <div>
+                <div class="testimonial-name">Priya Sharma</div>
+                <div class="testimonial-company">TechVenture Inc</div>
+              </div>
+            </div>
+          </div>
+          <div data-carousel-item class="testimonial-card">
+            <div class="testimonial-stars">★★★★★</div>
+            <p class="testimonial-text">"We replaced three separate tools with TASQ CRM. Our team productivity increased dramatically and customer satisfaction scores are at an all-time high."</p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">D</div>
+              <div>
+                <div class="testimonial-name">David Chen</div>
+                <div class="testimonial-company">ConsultPro</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-controls">
+        <button class="carousel-btn" data-carousel-prev>←</button>
+        <div class="carousel-dots">
+          <div class="carousel-dot active"></div>
+          <div class="carousel-dot"></div>
+          <div class="carousel-dot"></div>
+        </div>
+        <button class="carousel-btn" data-carousel-next>→</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq-section reveal">
+  <div class="container">
+    <div class="text-center">
+      <h2 class="section-heading">Frequently Asked <span>Questions</span></h2>
+    </div>
+    <div class="faq-grid" style="margin-top:2.5rem;max-width:800px;margin-left:auto;margin-right:auto;">
+      <div class="faq-item">
+        <button class="faq-question">Can I import my existing contacts into TASQ CRM? <span class="faq-icon">+</span></button>
+        <div class="faq-answer"><div class="faq-answer-inner">Yes! TASQ supports bulk contact import via CSV, Excel files, or direct integration with popular platforms like Google Contacts and LinkedIn.</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">Can multiple team members access the CRM simultaneously? <span class="faq-icon">+</span></button>
+        <div class="faq-answer"><div class="faq-answer-inner">Absolutely. TASQ CRM supports unlimited team members with role-based access controls, ensuring the right people see the right information.</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">Does the CRM support custom fields and pipelines? <span class="faq-icon">+</span></button>
+        <div class="faq-answer"><div class="faq-answer-inner">Yes. You can create custom fields, custom pipeline stages, and custom views to match your exact sales process.</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">Can I track the full history of customer interactions? <span class="faq-icon">+</span></button>
+        <div class="faq-answer"><div class="faq-answer-inner">Every call, email, meeting, and note is automatically logged to the customer timeline, giving you complete interaction history.</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">Is the CRM accessible on mobile devices? <span class="faq-icon">+</span></button>
+        <div class="faq-answer"><div class="faq-answer-inner">Yes, TASQ is fully responsive and works on all devices. Our mobile app ensures your team can access CRM data anywhere, anytime.</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="section">
+  <div class="container">
+    <div class="cta-banner reveal">
+      <h2 class="cta-banner-title">Ready to Transform Your Sales Process?</h2>
+      <p class="cta-banner-desc">Join thousands of sales teams using TASQ CRM to close more deals, faster.</p>
+      <div class="cta-banner-btns">
+        <a href="../pricing.html" class="btn btn-dark btn-lg btn-ripple">View Pricing <span class="btn-arrow">→</span></a>
+        <a href="../contact.html" class="btn btn-ghost btn-lg btn-ripple">Contact Us <span class="btn-arrow">→</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Shared Footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="../index.html" class="nav-logo"><div class="logo-icon">T</div><span class="logo-text">TASQ</span></a>
+        <p>The all-in-one business automation platform that helps businesses grow faster and smarter.</p>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col"><h4>Features</h4><a href="crm.html">CRM</a><a href="funnel-builder.html">Funnel Builder</a><a href="social-media.html">Social Media</a><a href="marketing-automation.html">Marketing</a><a href="email-whatsapp.html">Email & WhatsApp</a><a href="calendar.html">Calendar</a></div>
+        <div class="footer-col"><h4>More Features</h4><a href="ai-bot.html">AI Bot</a><a href="analytics.html">Analytics</a><a href="reputation.html">Reputation</a><a href="invoices.html">Invoices</a><a href="memberships.html">Memberships</a><a href="integrations.html">Integrations</a></div>
+        <div class="footer-col"><h4>Company</h4><a href="../pricing.html">Pricing</a><a href="../contact.html">Contact</a></div>
+      </div>
+    </div>
+    <div class="footer-bottom"><p>© 2024 TASQ. All rights reserved.</p><p>Built for ambitious businesses.</p></div>
+  </div>
+</footer>
+
+<script src="../js/main.js" defer></script>
+<script src="../js/feature-detail.js" defer></script>
+</body>
+</html>

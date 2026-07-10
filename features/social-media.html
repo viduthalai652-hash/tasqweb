@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Plan, schedule, and publish content across all major social platforms from one intelligent dashboard. Save hours every week while growing your audience consistently.">
+  <title>Social Media Automation – Schedule & Publish Across All Platforms | TASQ</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%23FF6A00'/><text x='50%25' y='54%25' dominant-baseline='middle' text-anchor='middle' font-family='Poppins,sans-serif' font-weight='900' font-size='20' fill='white'>T</text></svg>">
+  <link rel="stylesheet" href="../css/variables.css">
+  <link rel="stylesheet" href="../css/animations.css">
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="../css/navbar.css">
+  <link rel="stylesheet" href="../css/feature-detail.css">
+</head>
+<body>
+
+<!-- Shared Navbar -->
+<nav class="navbar" id="navbar">
+  <div class="nav-container">
+    <a href="../index.html" class="nav-logo">
+      <div class="logo-icon">T</div>
+      <span class="logo-text">TASQ</span>
+    </a>
+    <div class="nav-links" id="navLinks">
+      <a href="../features.html" class="nav-link active">Features</a>
+      <a href="../pricing.html" class="nav-link">Pricing</a>
+      <a href="../contact.html" class="nav-link nav-cta">Contact</a>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <button class="mobile-close" id="mobileClose">✕</button>
+  <a href="../index.html" class="mobile-nav-link">Home</a>
+  <a href="../features.html" class="mobile-nav-link">Features</a>
+  <a href="../pricing.html" class="mobile-nav-link">Pricing</a>
+  <a href="../contact.html" class="mobile-nav-link">Contact</a>
+</div>
+<div class="mobile-overlay" id="mobileOverlay"></div>
+
+<!-- Feature Hero -->
+<section class="feature-hero">
+  <div class="particles-container"></div>
+  <div class="container">
+    <div class="feature-hero-grid">
+      <!-- Left -->
+      <div class="feature-hero-content">
+        <div class="feature-badge reveal"><span class="feature-badge-dot"></span> 📱 Social Media</div>
+        <h1 class="reveal reveal-delay-1">Automate Your <span>Social Media</span> Presence</h1>
+        <p class="feature-hero-desc reveal reveal-delay-2">Plan, schedule, and publish content across all major social platforms from one intelligent dashboard. Save hours every week while growing your audience consistently.</p>
+        
+        <div class="feature-hero-highlights reveal reveal-delay-3">
+          <div class="hero-highlight"><span class="hero-highlight-icon">✓</span> Multi-Platform Publishing</div>
+          <div class="hero-highlight"><span class="hero-highlight-icon">✓</span> Content Calendar</div>
+          <div class="hero-highlight"><span class="hero-highlight-icon">✓</span> Performance Analytics</div>
+        </div>
+        
+        <div class="feature-hero-btns reveal reveal-delay-4">
+          <a href="../pricing.html" class="btn btn-primary btn-lg btn-ripple">View Pricing <span class="btn-arrow">→</span></a>
+          <a href="../contact.html" class="btn btn-secondary btn-lg btn-ripple">Contact Us <span class="btn-arrow">→</span></a>
+        </div>
+      </div>
+      
+      <!-- Right (Dashboard) -->
+      <div class="hero-dashboard reveal-left reveal-delay-2">
+        <div class="db-header">
+          <div class="db-dots"><span></span><span></span><span></span></div>
+          <div class="db-title">Social Media Dashboard</div>
+          <div class="db-badge">● Live</div>
+        </div>
+        <div class="db-body">
+          <div class="db-metrics">
+            <div class="db-metric">
+              <div class="db-metric-val">12</div>
+              <div class="db-metric-label">Platforms</div>
+            </div>
+            <div class="db-metric">
+              <div class="db-metric-val">340</div>
+              <div class="db-metric-label">Posts Scheduled</div>
+            </div>
+            <div class="db-metric">
+              <div class="db-metric-val">2.4M</div>
+              <div class="db-metric-label">Total Reach</div>
+            </div>
+            <div class="db-metric">
+              <div class="db-metric-val">8.2%</div>
+              <div class="db-metric-label">Engagement</div>
+            </div>
+          </div>
+          
+          <div class="db-chart">
+            <div style="font-size:0.6rem;color:rgba(255,255,255,0.45);font-family:var(--font-heading);margin-bottom:0.5rem;font-weight:600;text-transform:uppercase;">ENGAGEMENT TREND</div>
+            <div class="chart-bars">
+              <div class="chart-bar" style="--h:40%;--i:0"></div>
+              <div class="chart-bar" style="--h:55%;--i:1"></div>
+              <div class="chart-bar" style="--h:45%;--i:2"></div>
+              <div class="chart-bar" style="--h:80%;--i:3"></div>
+              <div class="chart-bar" style="--h:60%;--i:4"></div>
+              <div class="chart-bar" style="--h:90%;--i:5"></div>
+            </div>
+          </div>
+          
+          <div class="db-list">
+            <div class="db-list-item">
+              <div class="db-list-dot" style="background:#000000"></div>
+              <div class="db-list-text">X (Twitter) - Product Launch Thread</div>
+              <div class="db-list-badge" style="background:rgba(255,255,255,0.15);color:#ffffff">Scheduled</div>
+            </div>
+            <div class="db-list-item">
+              <div class="db-list-dot" style="background:#E1306C"></div>
+              <div class="db-list-text">Instagram Reel - Behind the scenes</div>
+              <div class="db-list-badge" style="background:rgba(225,48,108,0.15);color:#E1306C">Published</div>
+            </div>
+            <div class="db-list-item">
+              <div class="db-list-dot" style="background:#0a66c2"></div>
+              <div class="db-list-text">LinkedIn - Q3 Results Update</div>
+              <div class="db-list-badge" style="background:rgba(10,102,194,0.15);color:#0a66c2">Draft</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Overview -->
+<section class="feature-overview">
+  <div class="container">
+    <div class="feature-overview-grid">
+      <div class="reveal-right">
+        <div class="section-label">About Social Media</div>
+        <h2 class="section-heading">Manage Your Entire <span>Social Presence</span></h2>
+        <p class="section-subheading">Stop logging into multiple platforms to post your content. TASQ lets you plan, schedule, and analyze your social media performance across all channels from one centralized command center.</p>
+        
+        <div class="overview-bullets">
+          <div class="overview-bullet"><span class="overview-bullet-icon">📅</span> Unified Calendar</div>
+          <div class="overview-bullet"><span class="overview-bullet-icon">📝</span> Bulk Scheduling</div>
+          <div class="overview-bullet"><span class="overview-bullet-icon">📊</span> Deep Analytics</div>
+          <div class="overview-bullet"><span class="overview-bullet-icon">🎨</span> Visual Planner</div>
+          <div class="overview-bullet"><span class="overview-bullet-icon">👥</span> Team Workflows</div>
+          <div class="overview-bullet"><span class="overview-bullet-icon">🔄</span> Auto-recycling</div>
+        </div>
+      </div>
+      <div class="feature-overview-img reveal-left">
+        <img src="../assets/images/social_dashboard.jpg" alt="Social Media Dashboard" style="width:100%;border-radius:16px;box-shadow:var(--shadow-xl);">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Dashboard Preview (Live CSS Mockup) -->
+<section class="dashboard-preview-section reveal">
+  <div class="container">
+    <div class="dashboard-preview-header text-center">
+      <h2 class="section-heading" style="color:white;">Live Content <span>Calendar Preview</span></h2>
+      <p class="section-subheading" style="color:rgba(255,255,255,0.7);">Plan your week in minutes and let TASQ handle the publishing</p>
+    </div>
+    
+    <div class="dashboard-mockup reveal-scale">
+      <div class="mockup-header">
+        <div class="mockup-dots"><span></span><span></span><span></span></div>
+        <div class="mockup-url">tasq.app / social / calendar</div>
+      </div>
+      <div class="mockup-body">
+        <div style="background:rgba(255,255,255,0.03);border-radius:12px;padding:1.5rem;border:1px solid rgba(255,255,255,0.05);">
+          <!-- Calendar Header -->
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:1rem;">
+            <div style="font-family:var(--font-heading);font-weight:700;font-size:1.1rem;color:white;">October 2024</div>
+            <div style="display:flex;gap:0.5rem;">
+              <span style="background:rgba(255,106,0,0.15);color:var(--color-orange);padding:0.3rem 0.6rem;border-radius:4px;font-size:0.7rem;font-weight:bold;">Monthly</span>
+              <span style="background:rgba(255,255,255,0.1);color:white;padding:0.3rem 0.6rem;border-radius:4px;font-size:0.7rem;">Weekly</span>
+            </div>
+          </div>
+          <!-- Calendar Grid (CSS Mockup) -->
+          <div style="display:grid;grid-template-columns:repeat(7,1fr);gap:4px;">
+            <div style="font-size:0.7rem;color:#888;text-align:center;padding:0.5rem 0;">SUN</div>
+            <div style="font-size:0.7rem;color:#888;text-align:center;padding:0.5rem 0;">MON</div>
+            <div style="font-size:0.7rem;color:#888;text-align:center;padding:0.5rem 0;">TUE</div>
+            <div style="font-size:0.7rem;color:#888;text-align:center;padding:0.5rem 0;">WED</div>
+            <div style="font-size:0.7rem;color:#888;text-align:center;padding:0.5rem 0;">THU</div>
+            <div style="font-size:0.7rem;color:#888;text-align:center;padding:0.5rem 0;">FRI</div>
+            <div style="font-size:0.7rem;color:#888;text-align:center;padding:0.5rem 0;">SAT</div>
+            
+            <!-- A few sample days -->
+            <div style="min-height:80px;background:rgba(255,255,255,0.02);border:1px solid rgba(255,255,255,0.05);padding:0.5rem;border-radius:6px;">
+              <div style="font-size:0.75rem;color:#aaa;margin-bottom:0.5rem;">1</div>
+            </div>
+            <div style="min-height:80px;background:rgba(255,255,255,0.05);border:1px solid rgba(255,106,0,0.3);padding:0.5rem;border-radius:6px;">
+              <div style="font-size:0.75rem;color:white;margin-bottom:0.5rem;font-weight:bold;">2</div>
+              <div style="background:#E1306C;color:white;font-size:0.6rem;padding:0.2rem;border-radius:3px;margin-bottom:2px;">IG - Product Video</div>
+              <div style="background:#0a66c2;color:white;font-size:0.6rem;padding:0.2rem;border-radius:3px;">LI - Case Study</div>
+            </div>
+            <div style="min-height:80px;background:rgba(255,255,255,0.02);border:1px solid rgba(255,255,255,0.05);padding:0.5rem;border-radius:6px;">
+              <div style="font-size:0.75rem;color:#aaa;margin-bottom:0.5rem;">3</div>
+              <div style="background:#000;color:white;font-size:0.6rem;padding:0.2rem;border-radius:3px;border:1px solid #333;">X - Thread</div>
+            </div>
+            <div style="min-height:80px;background:rgba(255,255,255,0.02);border:1px solid rgba(255,255,255,0.05);padding:0.5rem;border-radius:6px;">
+              <div style="font-size:0.75rem;color:#aaa;margin-bottom:0.5rem;">4</div>
+            </div>
+            <div style="min-height:80px;background:rgba(255,255,255,0.02);border:1px solid rgba(255,255,255,0.05);padding:0.5rem;border-radius:6px;">
+              <div style="font-size:0.75rem;color:#aaa;margin-bottom:0.5rem;">5</div>
+              <div style="background:#FF0000;color:white;font-size:0.6rem;padding:0.2rem;border-radius:3px;">YT - Vlog #4</div>
+            </div>
+            <div style="min-height:80px;background:rgba(255,255,255,0.02);border:1px solid rgba(255,255,255,0.05);padding:0.5rem;border-radius:6px;">
+              <div style="font-size:0.75rem;color:#aaa;margin-bottom:0.5rem;">6</div>
+            </div>
+            <div style="min-height:80px;background:rgba(255,255,255,0.02);border:1px solid rgba(255,255,255,0.05);padding:0.5rem;border-radius:6px;">
+              <div style="font-size:0.75rem;color:#aaa;margin-bottom:0.5rem;">7</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Key Features -->
+<section class="key-features-section">
+  <div class="container">
+    <div class="text-center reveal">
+      <h2 class="section-heading">Built for <span>Social Growth</span></h2>
+    </div>
+    <div class="key-features-grid reveal">
+      <div class="key-feature-item">
+        <div class="key-feature-icon">📅</div>
+        <div class="key-feature-content">
+          <h4>Content Scheduler</h4>
+          <p>Schedule posts ahead of time and automatically publish them.</p>
+        </div>
+      </div>
+      <div class="key-feature-item">
+        <div class="key-feature-icon">📱</div>
+        <div class="key-feature-content">
+          <h4>Multi-Platform Publishing</h4>
+          <p>Post to Facebook, Instagram, LinkedIn, X, and more at once.</p>
+        </div>
+      </div>
+      <div class="key-feature-item">
+        <div class="key-feature-icon">📊</div>
+        <div class="key-feature-content">
+          <h4>Analytics Dashboard</h4>
+          <p>Track engagement, reach, and follower growth automatically.</p>
+        </div>
+      </div>
+      <div class="key-feature-item">
+        <div class="key-feature-icon">📝</div>
+        <div class="key-feature-content">
+          <h4>Content Calendar</h4>
+          <p>Visualize your entire content strategy on a drag-and-drop calendar.</p>
+        </div>
+      </div>
+      <div class="key-feature-item">
+        <div class="key-feature-icon">📈</div>
+        <div class="key-feature-content">
+          <h4>Engagement Reports</h4>
+          <p>Understand what content resonates best with your audience.</p>
+        </div>
+      </div>
+      <div class="key-feature-item">
+        <div class="key-feature-icon">✍️</div>
+        <div class="key-feature-content">
+          <h4>Draft Management</h4>
+          <p>Save ideas and works-in-progress to refine later.</p>
+        </div>
+      </div>
+      <div class="key-feature-item">
+        <div class="key-feature-icon">👥</div>
+        <div class="key-feature-content">
+          <h4>Team Collaboration</h4>
+          <p>Review and approve content before it goes live with custom roles.</p>
+        </div>
+      </div>
+      <div class="key-feature-item">
+        <div class="key-feature-icon">#️⃣</div>
+        <div class="key-feature-content">
+          <h4>Hashtag Research</h4>
+          <p>Find and save the best hashtags for your niche and platforms.</p>
+        </div>
+      </div>
+      <div class="key-feature-item">
+        <div class="key-feature-icon">🎨</div>
+        <div class="key-feature-content">
+          <h4>Post Templates</h4>
+          <p>Save frequently used post formats and captions for reuse.</p>
+        </div>
+      </div>
+      <div class="key-feature-item">
+        <div class="key-feature-icon">📡</div>
+        <div class="key-feature-content">
+          <h4>RSS Auto-Publish</h4>
+          <p>Automatically share your latest blog posts to your social feeds.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Benefits Grid -->
+<section class="benefits-section">
+  <div class="container">
+    <div class="text-center reveal">
+      <h2 class="section-heading">Why Use TASQ <span>Social Media</span>?</h2>
+    </div>
+    <div class="benefits-grid reveal">
+      <div class="benefit-item">
+        <div class="benefit-item-icon">⏱️</div>
+        <h4>Save 10+ Hours Weekly</h4>
+        <p>Eliminate the manual work of logging in and out of different apps.</p>
+      </div>
+      <div class="benefit-item">
+        <div class="benefit-item-icon">📅</div>
+        <h4>Consistent Posting</h4>
+        <p>Keep your audience engaged by maintaining a steady content flow.</p>
+      </div>
+      <div class="benefit-item">
+        <div class="benefit-item-icon">🔥</div>
+        <h4>Better Engagement</h4>
+        <p>Post when your audience is most active using data-driven insights.</p>
+      </div>
+      <div class="benefit-item">
+        <div class="benefit-item-icon">📊</div>
+        <h4>Unified Analytics</h4>
+        <p>See how all your social profiles are performing in one place.</p>
+      </div>
+      <div class="benefit-item">
+        <div class="benefit-item-icon">🤝</div>
+        <h4>Team Alignment</h4>
+        <p>Work seamlessly with your team without sharing passwords.</p>
+      </div>
+      <div class="benefit-item">
+        <div class="benefit-item-icon">♻️</div>
+        <h4>Content Repurposing</h4>
+        <p>Easily tweak one piece of content for multiple different platforms.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Workflow Steps -->
+<section class="workflow-section">
+  <div class="container">
+    <div class="workflow-grid">
+      <div class="reveal-right">
+        <h2 class="section-heading">How It <span>Works</span></h2>
+        <div class="workflow-steps">
+          <div class="workflow-step">
+            <div class="workflow-step-num">1</div>
+            <div class="workflow-step-content">
+              <h4>Create Content</h4>
+              <p>Write your captions and upload media for multiple platforms at once.</p>
+            </div>
+          </div>
+          <div class="workflow-step">
+            <div class="workflow-step-num">2</div>
+            <div class="workflow-step-content">
+              <h4>Review & Approve</h4>
+              <p>Collaborate with your team to ensure every post is perfect.</p>
+            </div>
+          </div>
+          <div class="workflow-step">
+            <div class="workflow-step-num">3</div>
+            <div class="workflow-step-content">
+              <h4>Schedule</h4>
+              <p>Pick the exact date and time, or let TASQ choose the best time.</p>
+            </div>
+          </div>
+          <div class="workflow-step">
+            <div class="workflow-step-num">4</div>
+            <div class="workflow-step-content">
+              <h4>Auto-Publish</h4>
+              <p>TASQ automatically publishes your content while you focus on other things.</p>
+            </div>
+          </div>
+          <div class="workflow-step">
+            <div class="workflow-step-num">5</div>
+            <div class="workflow-step-content">
+              <h4>Track Performance</h4>
+              <p>Monitor likes, shares, clicks, and growth from your analytics dashboard.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="reveal-left" style="display:flex;align-items:center;justify-content:center;">
+        <img src="../assets/images/social_dashboard.jpg" alt="Workflow Social" style="width:100%;border-radius:16px;box-shadow:var(--shadow-xl);">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Use Cases -->
+<section class="use-cases-section reveal">
+  <div class="container text-center">
+    <h2 class="section-heading" style="color:white;">Who is this for?</h2>
+    <div class="use-cases-chips">
+      <div class="use-case-chip"><span class="use-case-chip-icon">🎯</span> Marketing Agencies</div>
+      <div class="use-case-chip"><span class="use-case-chip-icon">🏪</span> Small Businesses</div>
+      <div class="use-case-chip"><span class="use-case-chip-icon">📸</span> Influencers</div>
+      <div class="use-case-chip"><span class="use-case-chip-icon">✨</span> Brands</div>
+      <div class="use-case-chip"><span class="use-case-chip-icon">🛍️</span> E-commerce</div>
+      <div class="use-case-chip"><span class="use-case-chip-icon">🚀</span> Startups</div>
+      <div class="use-case-chip"><span class="use-case-chip-icon">🎨</span> Content Creators</div>
+      <div class="use-case-chip"><span class="use-case-chip-icon">🗣️</span> Coaches</div>
+    </div>
+  </div>
+</section>
+
+<!-- Testimonials -->
+<section class="testimonials-section reveal">
+  <div class="container">
+    <div class="text-center">
+      <h2 class="section-heading">Trusted by <span>Social Media Managers</span></h2>
+    </div>
+    <div data-carousel style="margin-top:3rem;">
+      <div class="carousel-wrapper">
+        <div class="carousel-track">
+          <div data-carousel-item class="testimonial-card">
+            <div class="testimonial-stars">★★★★★</div>
+            <p class="testimonial-text">"Before TASQ, managing 15 client accounts was a nightmare of spreadsheets and alarms. Now, we schedule a month of content in two days."</p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">C</div>
+              <div>
+                <div class="testimonial-name">Chloe Davies</div>
+                <div class="testimonial-company">SocialSpark Agency</div>
+              </div>
+            </div>
+          </div>
+          <div data-carousel-item class="testimonial-card">
+            <div class="testimonial-stars">★★★★★</div>
+            <p class="testimonial-text">"The best part is the unified analytics. I can instantly generate a PDF report for my boss showing exactly how our social presence is growing across all 5 platforms."</p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">M</div>
+              <div>
+                <div class="testimonial-name">Mark Robinson</div>
+                <div class="testimonial-company">FitLife Brands</div>
+              </div>
+            </div>
+          </div>
+          <div data-carousel-item class="testimonial-card">
+            <div class="testimonial-stars">★★★★★</div>
+            <p class="testimonial-text">"I run my business solo. Being able to batch create and schedule my Instagram Reels and LinkedIn posts means I can actually take weekends off again."</p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">E</div>
+              <div>
+                <div class="testimonial-name">Elena Rodriguez</div>
+                <div class="testimonial-company">ER Consulting</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-controls">
+        <button class="carousel-btn" data-carousel-prev>←</button>
+        <div class="carousel-dots">
+          <div class="carousel-dot active"></div>
+          <div class="carousel-dot"></div>
+          <div class="carousel-dot"></div>
+        </div>
+        <button class="carousel-btn" data-carousel-next>→</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq-section reveal">
+  <div class="container">
+    <div class="text-center">
+      <h2 class="section-heading">Frequently Asked <span>Questions</span></h2>
+    </div>
+    <div class="faq-grid" style="margin-top:2.5rem;max-width:800px;margin-left:auto;margin-right:auto;">
+      <div class="faq-item">
+        <button class="faq-question">Which social platforms are supported? <span class="faq-icon">+</span></button>
+        <div class="faq-answer"><div class="faq-answer-inner">TASQ supports Facebook (Pages & Groups), Instagram, Twitter/X, LinkedIn, TikTok, Pinterest, YouTube, and Google Business Profile.</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">Can I schedule content weeks or months in advance? <span class="faq-icon">+</span></button>
+        <div class="faq-answer"><div class="faq-answer-inner">Yes, schedule content as far in advance as you need with our intuitive calendar interface. There is no limit on how far ahead you can plan.</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">Does it support Instagram Reels and Stories? <span class="faq-icon">+</span></button>
+        <div class="faq-answer"><div class="faq-answer-inner">Yes, TASQ supports all modern content formats including Reels, Stories, Carousels, Shorts, and standard image/video posts.</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">Can multiple team members collaborate? <span class="faq-icon">+</span></button>
+        <div class="faq-answer"><div class="faq-answer-inner">Yes, you can invite team members, assign specific roles, create approval workflows, and leave internal comments on drafted content.</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">Are detailed analytics provided? <span class="faq-icon">+</span></button>
+        <div class="faq-answer"><div class="faq-answer-inner">Absolutely. Track reach, impressions, engagement rates, follower growth, and discover your best posting times for each specific platform.</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="section">
+  <div class="container">
+    <div class="cta-banner reveal">
+      <h2 class="cta-banner-title">Take Control of Your Social Media</h2>
+      <p class="cta-banner-desc">Start scheduling your content and growing your audience effortlessly with TASQ.</p>
+      <div class="cta-banner-btns">
+        <a href="../pricing.html" class="btn btn-dark btn-lg btn-ripple">View Pricing <span class="btn-arrow">→</span></a>
+        <a href="../contact.html" class="btn btn-ghost btn-lg btn-ripple">Contact Us <span class="btn-arrow">→</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Shared Footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="../index.html" class="nav-logo"><div class="logo-icon">T</div><span class="logo-text">TASQ</span></a>
+        <p>The all-in-one business automation platform that helps businesses grow faster and smarter.</p>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col"><h4>Features</h4><a href="crm.html">CRM</a><a href="funnel-builder.html">Funnel Builder</a><a href="social-media.html">Social Media</a><a href="marketing-automation.html">Marketing</a><a href="email-whatsapp.html">Email & WhatsApp</a><a href="calendar.html">Calendar</a></div>
+        <div class="footer-col"><h4>More Features</h4><a href="ai-bot.html">AI Bot</a><a href="analytics.html">Analytics</a><a href="reputation.html">Reputation</a><a href="invoices.html">Invoices</a><a href="memberships.html">Memberships</a><a href="integrations.html">Integrations</a></div>
+        <div class="footer-col"><h4>Company</h4><a href="../pricing.html">Pricing</a><a href="../contact.html">Contact</a></div>
+      </div>
+    </div>
+    <div class="footer-bottom"><p>© 2024 TASQ. All rights reserved.</p><p>Built for ambitious businesses.</p></div>
+  </div>
+</footer>
+
+<script src="../js/main.js" defer></script>
+<script src="../js/feature-detail.js" defer></script>
+</body>
+</html>

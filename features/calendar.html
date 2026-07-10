@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Eliminate back-and-forth emails. Share a link, let clients book appointments, and automate reminders with TASQ's smart calendar scheduling system.">
+  <title>Calendar & Booking – Smart Appointment Scheduling | TASQ</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%23FF6A00'/><text x='50%25' y='54%25' dominant-baseline='middle' text-anchor='middle' font-family='Poppins,sans-serif' font-weight='900' font-size='20' fill='white'>T</text></svg>">
+  <link rel="stylesheet" href="../css/variables.css">
+  <link rel="stylesheet" href="../css/animations.css">
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="../css/navbar.css">
+  <link rel="stylesheet" href="../css/feature-detail.css">
+</head>
+<body>
+
+<!-- Shared Navbar -->
+<nav class="navbar" id="navbar">
+  <div class="nav-container">
+    <a href="../index.html" class="nav-logo">
+      <div class="logo-icon">T</div>
+      <span class="logo-text">TASQ</span>
+    </a>
+    <div class="nav-links" id="navLinks">
+      <a href="../features.html" class="nav-link active">Features</a>
+      <a href="../pricing.html" class="nav-link">Pricing</a>
+      <a href="../contact.html" class="nav-link nav-cta">Contact</a>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <button class="mobile-close" id="mobileClose">✕</button>
+  <a href="../index.html" class="mobile-nav-link">Home</a>
+  <a href="../features.html" class="mobile-nav-link">Features</a>
+  <a href="../pricing.html" class="mobile-nav-link">Pricing</a>
+  <a href="../contact.html" class="mobile-nav-link">Contact</a>
+</div>
+<div class="mobile-overlay" id="mobileOverlay"></div>
+
+<!-- Feature Hero -->
+<section class="feature-hero">
+  <div class="particles-container"></div>
+  <div class="container">
+    <div class="feature-hero-grid">
+      <!-- Left -->
+      <div class="feature-hero-content">
+        <div class="feature-badge reveal"><span class="feature-badge-dot"></span> 📅 Calendar Scheduling</div>
+        <h1 class="reveal reveal-delay-1">Automated <span>Appointment Booking</span></h1>
+        <p class="feature-hero-desc reveal reveal-delay-2">Eliminate back-and-forth emails. Share a link, let clients book appointments, process payments, and automate reminders with TASQ's smart calendar system.</p>
+        
+        <div class="feature-hero-highlights reveal reveal-delay-3">
+          <div class="hero-highlight"><span class="hero-highlight-icon">✓</span> 2-Way Sync (Google, Outlook)</div>
+          <div class="hero-highlight"><span class="hero-highlight-icon">✓</span> Automated Reminders (SMS/Email)</div>
+          <div class="hero-highlight"><span class="hero-highlight-icon">✓</span> Paid Appointments</div>
+        </div>
+        
+        <div class="feature-hero-btns reveal reveal-delay-4">
+          <a href="../pricing.html" class="btn btn-primary btn-lg btn-ripple">View Pricing <span class="btn-arrow">→</span></a>
+          <a href="../contact.html" class="btn btn-secondary btn-lg btn-ripple">Contact Us <span class="btn-arrow">→</span></a>
+        </div>
+      </div>
+      
+      <!-- Right (Dashboard) -->
+      <div class="hero-dashboard reveal-left reveal-delay-2">
+        <div class="db-header">
+          <div class="db-dots"><span></span><span></span><span></span></div>
+          <div class="db-title">Calendar View</div>
+          <div class="db-badge">● Live</div>
+        </div>
+        <div class="db-body">
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:1rem;color:white;font-weight:bold;font-family:var(--font-heading);">
+            <span>October 12-18</span>
+            <span style="font-size:0.7rem;background:rgba(255,255,255,0.1);padding:0.3rem 0.6rem;border-radius:4px;">Weekly</span>
+          </div>
+          <!-- Abstract Calendar Mockup -->
+          <div style="display:grid;grid-template-columns:50px repeat(5, 1fr);gap:2px;height:220px;background:rgba(255,255,255,0.02);border:1px solid rgba(255,255,255,0.05);border-radius:8px;padding:0.5rem;overflow:hidden;">
+            <!-- Header -->
+            <div></div>
+            <div style="font-size:0.6rem;color:#888;text-align:center;">MON 12</div>
+            <div style="font-size:0.6rem;color:#888;text-align:center;">TUE 13</div>
+            <div style="font-size:0.6rem;color:#fff;text-align:center;font-weight:bold;">WED 14</div>
+            <div style="font-size:0.6rem;color:#888;text-align:center;">THU 15</div>
+            <div style="font-size:0.6rem;color:#888;text-align:center;">FRI 16</div>
+            
+            <!-- Grid (Simplified) -->
+            <div style="font-size:0.6rem;color:#666;text-align:right;padding-right:5px;border-top:1px solid rgba(255,255,255,0.05);">9 AM</div>
+            <div style="border-top:1px solid rgba(255,255,255,0.05);border-left:1px solid rgba(255,255,255,0.05);"></div>
+            <div style="border-top:1px solid rgba(255,255,255,0.05);border-left:1px solid rgba(255,255,255,0.05);padding:2px;"><div style="background:var(--color-orange);height:100%;border-radius:3px;font-size:0.5rem;color:white;padding:2px;">Consultation</div></div>
+            <div style="border-top:1px solid rgba(255,255,255,0.05);border-left:1px solid rgba(255,255,255,0.05);"></div>
+            <div style="border-top:1px solid rgba(255,255,255,0.05);border-left:1px solid rgba(255,255,255,0.05);"></div>
+            <div style="border-top:1px solid rgba(255,255,255,0.05);border-left:1px solid rgba(255,255,255,0.05);padding:2px;"><div style="background:#22c55e;height:100%;border-radius:3px;font-size:0.5rem;color:white;padding:2px;">Team Sync</div></div>
+            
+            <div style="font-size:0.6rem;color:#666;text-align:right;padding-right:5px;border-top:1px solid rgba(255,255,255,0.05);">10 AM</div>
+            <div style="border-top:1px solid rgba(255,255,255,0.05);border-left:1px solid rgba(255,255,255,0.05);padding:2px;"><div style="background:#3b82f6;height:100%;border-radius:3px;font-size:0.5rem;color:white;padding:2px;">Demo Call</div></div>
+            <div style="border-top:1px solid rgba(255,255,255,0.05);border-left:1px solid rgba(255,255,255,0.05);"></div>
+            <div style="border-top:1px solid rgba(255,255,255,0.05);border-left:1px solid rgba(255,255,255,0.05);padding:2px;"><div style="background:var(--color-orange);height:100%;border-radius:3px;font-size:0.5rem;color:white;padding:2px;">Discovery</div></div>
+            <div style="border-top:1px solid rgba(255,255,255,0.05);border-left:1px solid rgba(255,255,255,0.05);"></div>
+            <div style="border-top:1px solid rgba(255,255,255,0.05);border-left:1px solid rgba(255,255,255,0.05);"></div>
+            
+            <div style="font-size:0.6rem;color:#666;text-align:right;padding-right:5px;border-top:1px solid rgba(255,255,255,0.05);">11 AM</div>
+            <div style="border-top:1px solid rgba(255,255,255,0.05);border-left:1px solid rgba(255,255,255,0.05);"></div>
+            <div style="border-top:1px solid rgba(255,255,255,0.05);border-left:1px solid rgba(255,255,255,0.05);"></div>
+            <div style="border-top:1px solid rgba(255,255,255,0.05);border-left:1px solid rgba(255,255,255,0.05);"></div>
+            <div style="border-top:1px solid rgba(255,255,255,0.05);border-left:1px solid rgba(255,255,255,0.05);padding:2px;"><div style="background:#a855f7;height:100%;border-radius:3px;font-size:0.5rem;color:white;padding:2px;">Onboarding</div></div>
+            <div style="border-top:1px solid rgba(255,255,255,0.05);border-left:1px solid rgba(255,255,255,0.05);"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Overview -->
+<section class="feature-overview">
+  <div class="container">
+    <div class="feature-overview-grid">
+      <div class="reveal-right">
+        <div class="section-label">About Calendar Automation</div>
+        <h2 class="section-heading">Never Ask "What Time <span>Works For You?</span>" Again</h2>
+        <p class="section-subheading">TASQ connects directly to your existing calendars to find available times. Send a booking link, and let clients schedule themselves without the friction of endless emails.</p>
+        
+        <div class="overview-bullets">
+          <div class="overview-bullet"><span class="overview-bullet-icon">🔗</span> Custom Booking Links</div>
+          <div class="overview-bullet"><span class="overview-bullet-icon">🔄</span> 2-Way Calendar Sync</div>
+          <div class="overview-bullet"><span class="overview-bullet-icon">🔔</span> SMS Reminders</div>
+          <div class="overview-bullet"><span class="overview-bullet-icon">💳</span> Take Payments Upfront</div>
+          <div class="overview-bullet"><span class="overview-bullet-icon">👥</span> Team Round-Robin</div>
+          <div class="overview-bullet"><span class="overview-bullet-icon">⚙️</span> Custom Buffers</div>
+        </div>
+      </div>
+      <div class="feature-overview-img reveal-left">
+        <!-- Booking Page Mockup -->
+        <div style="background:#f4f5f7;border-radius:16px;padding:1.5rem;height:100%;box-shadow:var(--shadow-xl);border:1px solid #ddd;display:flex;justify-content:center;align-items:center;">
+          <div style="background:white;width:100%;max-width:380px;border-radius:12px;box-shadow:0 10px 25px rgba(0,0,0,0.05);overflow:hidden;">
+            <div style="padding:1.5rem;border-bottom:1px solid #eee;text-align:center;">
+              <h3 style="font-family:var(--font-heading);font-weight:700;color:#111;margin-bottom:0.3rem;">Strategy Session</h3>
+              <p style="font-size:0.8rem;color:#666;">30 Minutes • Video Call</p>
+            </div>
+            <div style="padding:1.5rem;">
+              <div style="font-weight:bold;font-size:0.9rem;color:#333;margin-bottom:1rem;">Select a Date & Time</div>
+              <div style="display:grid;grid-template-columns:repeat(7, 1fr);gap:0.3rem;margin-bottom:1rem;">
+                <div style="text-align:center;font-size:0.7rem;color:#888;">M</div><div style="text-align:center;font-size:0.7rem;color:#888;">T</div><div style="text-align:center;font-size:0.7rem;color:#888;">W</div><div style="text-align:center;font-size:0.7rem;color:#888;">T</div><div style="text-align:center;font-size:0.7rem;color:#888;">F</div><div style="text-align:center;font-size:0.7rem;color:#888;">S</div><div style="text-align:center;font-size:0.7rem;color:#888;">S</div>
+                <div style="text-align:center;font-size:0.8rem;padding:0.4rem;color:#ccc;">11</div><div style="text-align:center;font-size:0.8rem;padding:0.4rem;color:#ccc;">12</div><div style="text-align:center;font-size:0.8rem;padding:0.4rem;color:#ccc;">13</div><div style="text-align:center;font-size:0.8rem;padding:0.4rem;color:#111;background:#f0f0f0;border-radius:50%;">14</div><div style="text-align:center;font-size:0.8rem;padding:0.4rem;color:white;background:var(--color-orange);border-radius:50%;font-weight:bold;">15</div><div style="text-align:center;font-size:0.8rem;padding:0.4rem;color:#111;">16</div><div style="text-align:center;font-size:0.8rem;padding:0.4rem;color:#111;">17</div>
+              </div>
+              <div style="display:grid;grid-template-columns:1fr 1fr;gap:0.5rem;">
+                <div style="border:1px solid var(--color-orange);color:var(--color-orange);text-align:center;padding:0.5rem;border-radius:6px;font-size:0.85rem;font-weight:bold;background:rgba(255,106,0,0.05);">10:00 AM</div>
+                <div style="border:1px solid #ddd;color:#333;text-align:center;padding:0.5rem;border-radius:6px;font-size:0.85rem;">11:30 AM</div>
+                <div style="border:1px solid #ddd;color:#333;text-align:center;padding:0.5rem;border-radius:6px;font-size:0.85rem;">2:00 PM</div>
+                <div style="border:1px solid #ddd;color:#333;text-align:center;padding:0.5rem;border-radius:6px;font-size:0.85rem;">3:30 PM</div>
+              </div>
+              <div style="margin-top:1.5rem;">
+                <button style="width:100%;background:var(--color-orange);color:white;border:none;padding:0.75rem;border-radius:6px;font-weight:bold;cursor:pointer;">Confirm Booking</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Key Features -->
+<section class="key-features-section">
+  <div class="container">
+    <div class="text-center reveal">
+      <h2 class="section-heading">Robust <span>Scheduling</span> Features</h2>
+    </div>
+    <div class="key-features-grid reveal">
+      <div class="key-feature-item">
+        <div class="key-feature-icon">🔄</div>
+        <div class="key-feature-content">
+          <h4>2-Way Sync</h4>
+          <p>Syncs seamlessly with Google Calendar, Outlook, and iCloud to prevent double bookings.</p>
+        </div>
+      </div>
+      <div class="key-feature-item">
+        <div class="key-feature-icon">🔔</div>
+        <div class="key-feature-content">
+          <h4>Automated Reminders</h4>
+          <p>Dramatically reduce no-shows with automated email and SMS reminders.</p>
+        </div>
+      </div>
+      <div class="key-feature-item">
+        <div class="key-feature-icon">👥</div>
+        <div class="key-feature-content">
+          <h4>Team Calendars</h4>
+          <p>View all team members' schedules in one centralized dashboard view.</p>
+        </div>
+      </div>
+      <div class="key-feature-item">
+        <div class="key-feature-icon">🔀</div>
+        <div class="key-feature-content">
+          <h4>Round-Robin Routing</h4>
+          <p>Automatically distribute booked calls evenly among available sales reps.</p>
+        </div>
+      </div>
+      <div class="key-feature-item">
+        <div class="key-feature-icon">💳</div>
+        <div class="key-feature-content">
+          <h4>Paid Appointments</h4>
+          <p>Require Stripe or PayPal payment upfront before an appointment is booked.</p>
+        </div>
+      </div>
+      <div class="key-feature-item">
+        <div class="key-feature-icon">🛡️</div>
+        <div class="key-feature-content">
+          <h4>Buffer Times</h4>
+          <p>Automatically add prep/travel time before and after scheduled meetings.</p>
+        </div>
+      </div>
+      <div class="key-feature-item">
+        <div class="key-feature-icon">📝</div>
+        <div class="key-feature-content">
+          <h4>Intake Forms</h4>
+          <p>Collect specific questions, files, or data from clients when they book.</p>
+        </div>
+      </div>
+      <div class="key-feature-item">
+        <div class="key-feature-icon">🌍</div>
+        <div class="key-feature-content">
+          <h4>Timezone Detection</h4>
+          <p>Shows availability automatically converted into the client's local timezone.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Benefits Grid -->
+<section class="benefits-section">
+  <div class="container">
+    <div class="text-center reveal">
+      <h2 class="section-heading">Why Use TASQ <span>Calendars</span>?</h2>
+    </div>
+    <div class="benefits-grid reveal">
+      <div class="benefit-item">
+        <div class="benefit-item-icon">⚡</div>
+        <h4>Book Faster</h4>
+        <p>Shorten the sales cycle by letting prospects book a call instantly while they are hot.</p>
+      </div>
+      <div class="benefit-item">
+        <div class="benefit-item-icon">📉</div>
+        <h4>Reduce No-Shows</h4>
+        <p>Automated reminders drastically cut down the number of missed appointments.</p>
+      </div>
+      <div class="benefit-item">
+        <div class="benefit-item-icon">💼</div>
+        <h4>Look Professional</h4>
+        <p>Provide a seamless, branded booking experience that impresses clients immediately.</p>
+      </div>
+      <div class="benefit-item">
+        <div class="benefit-item-icon">🤝</div>
+        <h4>CRM Integration</h4>
+        <p>Every booked call automatically creates or updates the contact in your TASQ CRM.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="section">
+  <div class="container">
+    <div class="cta-banner reveal">
+      <h2 class="cta-banner-title">Fill Your Calendar Today</h2>
+      <p class="cta-banner-desc">Replace Calendly and automate your booking process entirely within TASQ.</p>
+      <div class="cta-banner-btns">
+        <a href="../pricing.html" class="btn btn-dark btn-lg btn-ripple">View Pricing <span class="btn-arrow">→</span></a>
+        <a href="../contact.html" class="btn btn-ghost btn-lg btn-ripple">Contact Us <span class="btn-arrow">→</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Shared Footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="../index.html" class="nav-logo"><div class="logo-icon">T</div><span class="logo-text">TASQ</span></a>
+        <p>The all-in-one business automation platform that helps businesses grow faster and smarter.</p>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col"><h4>Features</h4><a href="crm.html">CRM</a><a href="funnel-builder.html">Funnel Builder</a><a href="social-media.html">Social Media</a><a href="marketing-automation.html">Marketing</a><a href="email-whatsapp.html">Email & WhatsApp</a><a href="calendar.html">Calendar</a></div>
+        <div class="footer-col"><h4>More Features</h4><a href="ai-bot.html">AI Bot</a><a href="analytics.html">Analytics</a><a href="reputation.html">Reputation</a><a href="invoices.html">Invoices</a><a href="memberships.html">Memberships</a><a href="integrations.html">Integrations</a></div>
+        <div class="footer-col"><h4>Company</h4><a href="../pricing.html">Pricing</a><a href="../contact.html">Contact</a></div>
+      </div>
+    </div>
+    <div class="footer-bottom"><p>© 2024 TASQ. All rights reserved.</p><p>Built for ambitious businesses.</p></div>
+  </div>
+</footer>
+
+<script src="../js/main.js" defer></script>
+<script src="../js/feature-detail.js" defer></script>
+</body>
+</html>

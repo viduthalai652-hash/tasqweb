@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Build powerful automated workflows that nurture leads, engage customers at the right moment, and drive conversions — all without manual effort.">
+  <title>Marketing Automation – Automate Campaigns & Nurture Leads | TASQ</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%23FF6A00'/><text x='50%25' y='54%25' dominant-baseline='middle' text-anchor='middle' font-family='Poppins,sans-serif' font-weight='900' font-size='20' fill='white'>T</text></svg>">
+  <link rel="stylesheet" href="../css/variables.css">
+  <link rel="stylesheet" href="../css/animations.css">
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="../css/navbar.css">
+  <link rel="stylesheet" href="../css/feature-detail.css">
+</head>
+<body>
+
+<!-- Shared Navbar -->
+<nav class="navbar" id="navbar">
+  <div class="nav-container">
+    <a href="../index.html" class="nav-logo">
+      <div class="logo-icon">T</div>
+      <span class="logo-text">TASQ</span>
+    </a>
+    <div class="nav-links" id="navLinks">
+      <a href="../features.html" class="nav-link active">Features</a>
+      <a href="../pricing.html" class="nav-link">Pricing</a>
+      <a href="../contact.html" class="nav-link nav-cta">Contact</a>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <button class="mobile-close" id="mobileClose">✕</button>
+  <a href="../index.html" class="mobile-nav-link">Home</a>
+  <a href="../features.html" class="mobile-nav-link">Features</a>
+  <a href="../pricing.html" class="mobile-nav-link">Pricing</a>
+  <a href="../contact.html" class="mobile-nav-link">Contact</a>
+</div>
+<div class="mobile-overlay" id="mobileOverlay"></div>
+
+<!-- Feature Hero -->
+<section class="feature-hero">
+  <div class="particles-container"></div>
+  <div class="container">
+    <div class="feature-hero-grid">
+      <!-- Left -->
+      <div class="feature-hero-content">
+        <div class="feature-badge reveal"><span class="feature-badge-dot"></span> ⚡ Marketing Automation</div>
+        <h1 class="reveal reveal-delay-1">Intelligent <span>Marketing Automation</span> That Converts</h1>
+        <p class="feature-hero-desc reveal reveal-delay-2">Build powerful automated workflows that nurture leads, engage customers at the right moment, and drive conversions — all without manual effort.</p>
+        
+        <div class="feature-hero-highlights reveal reveal-delay-3">
+          <div class="hero-highlight"><span class="hero-highlight-icon">✓</span> Visual Workflow Builder</div>
+          <div class="hero-highlight"><span class="hero-highlight-icon">✓</span> Lead Scoring</div>
+          <div class="hero-highlight"><span class="hero-highlight-icon">✓</span> Customer Segmentation</div>
+        </div>
+        
+        <div class="feature-hero-btns reveal reveal-delay-4">
+          <a href="../pricing.html" class="btn btn-primary btn-lg btn-ripple">View Pricing <span class="btn-arrow">→</span></a>
+          <a href="../contact.html" class="btn btn-secondary btn-lg btn-ripple">Contact Us <span class="btn-arrow">→</span></a>
+        </div>
+      </div>
+      
+      <!-- Right (Dashboard) -->
+      <div class="hero-dashboard reveal-left reveal-delay-2">
+        <div class="db-header">
+          <div class="db-dots"><span></span><span></span><span></span></div>
+          <div class="db-title">Automation Dashboard</div>
+          <div class="db-badge">● Live</div>
+        </div>
+        <div class="db-body">
+          <div class="db-metrics">
+            <div class="db-metric">
+              <div class="db-metric-val">86</div>
+              <div class="db-metric-label">Workflows</div>
+            </div>
+            <div class="db-metric">
+              <div class="db-metric-val">24K</div>
+              <div class="db-metric-label">Contacts</div>
+            </div>
+            <div class="db-metric">
+              <div class="db-metric-val">38%</div>
+              <div class="db-metric-label">Open Rate</div>
+            </div>
+            <div class="db-metric">
+              <div class="db-metric-val">12.4%</div>
+              <div class="db-metric-label">CTR</div>
+            </div>
+          </div>
+          
+          <div class="db-chart">
+            <div style="font-size:0.6rem;color:rgba(255,255,255,0.45);font-family:var(--font-heading);margin-bottom:0.5rem;font-weight:600;text-transform:uppercase;">WORKFLOW EXECUTIONS</div>
+            <div class="chart-bars">
+              <div class="chart-bar" style="--h:50%;--i:0"></div>
+              <div class="chart-bar" style="--h:65%;--i:1"></div>
+              <div class="chart-bar" style="--h:85%;--i:2"></div>
+              <div class="chart-bar" style="--h:60%;--i:3"></div>
+              <div class="chart-bar" style="--h:95%;--i:4"></div>
+              <div class="chart-bar" style="--h:80%;--i:5"></div>
+            </div>
+          </div>
+          
+          <div class="db-list">
+            <div class="db-list-item">
+              <div class="db-list-dot" style="background:#22c55e"></div>
+              <div class="db-list-text">Welcome Series (New Subs)</div>
+              <div class="db-list-badge" style="background:rgba(34,197,94,0.15);color:#22c55e">Active</div>
+            </div>
+            <div class="db-list-item">
+              <div class="db-list-dot" style="background:#3b82f6"></div>
+              <div class="db-list-text">Abandoned Cart Recovery</div>
+              <div class="db-list-badge" style="background:rgba(59,130,246,0.15);color:#3b82f6">Active</div>
+            </div>
+            <div class="db-list-item">
+              <div class="db-list-dot" style="background:#FFA726"></div>
+              <div class="db-list-text">Webinar Follow-up Sequence</div>
+              <div class="db-list-badge" style="background:rgba(255,167,38,0.15);color:#FFA726">Paused</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Overview -->
+<section class="feature-overview">
+  <div class="container">
+    <div class="feature-overview-grid">
+      <div class="reveal-right">
+        <div class="section-label">About Marketing Automation</div>
+        <h2 class="section-heading">Put Your Marketing on <span>Autopilot</span></h2>
+        <p class="section-subheading">Send the right message, to the right person, at exactly the right time. TASQ's marketing automation removes the manual work from lead nurturing and customer retention.</p>
+        
+        <div class="overview-bullets">
+          <div class="overview-bullet"><span class="overview-bullet-icon">⚡</span> Trigger-Based Actions</div>
+          <div class="overview-bullet"><span class="overview-bullet-icon">🔀</span> Conditional Logic</div>
+          <div class="overview-bullet"><span class="overview-bullet-icon">🎯</span> Hyper-Personalization</div>
+          <div class="overview-bullet"><span class="overview-bullet-icon">⏱️</span> Time Delays</div>
+          <div class="overview-bullet"><span class="overview-bullet-icon">📈</span> Conversion Tracking</div>
+          <div class="overview-bullet"><span class="overview-bullet-icon">🔄</span> CRM Sync</div>
+        </div>
+      </div>
+      <div class="feature-overview-img reveal-left">
+        <img src="../assets/images/marketing_dashboard.jpg" alt="Marketing Automation Dashboard" style="width:100%;border-radius:16px;box-shadow:var(--shadow-xl);">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Dashboard Preview (Live CSS Mockup) -->
+<section class="dashboard-preview-section reveal">
+  <div class="container">
+    <div class="dashboard-preview-header text-center">
+      <h2 class="section-heading" style="color:white;">Live Workflow <span>Builder Preview</span></h2>
+      <p class="section-subheading" style="color:rgba(255,255,255,0.7);">Build complex marketing sequences visually, no code required</p>
+    </div>
+    
+    <div class="dashboard-mockup reveal-scale">
+      <div class="mockup-header">
+        <div class="mockup-dots"><span></span><span></span><span></span></div>
+        <div class="mockup-url">tasq.app / marketing / workflows / edit</div>
+      </div>
+      <div class="mockup-body">
+        <div style="background:#1e1e1e;border-radius:12px;padding:2rem;height:350px;position:relative;overflow:hidden;display:flex;flex-direction:column;align-items:center;border:1px solid rgba(255,106,0,0.2);">
+          
+          <!-- Visual Workflow Node 1 (Trigger) -->
+          <div style="background:rgba(255,106,0,0.15);border:1px solid var(--color-orange);padding:1rem;border-radius:8px;width:250px;text-align:center;z-index:2;">
+            <div style="font-size:0.7rem;color:var(--color-orange);font-family:var(--font-heading);font-weight:700;margin-bottom:0.25rem;">TRIGGER</div>
+            <div style="color:white;font-size:0.9rem;font-weight:600;">Customer Abandons Cart</div>
+          </div>
+          
+          <div style="height:30px;width:2px;background:var(--color-orange);z-index:1;"></div>
+          
+          <!-- Visual Workflow Node 2 (Action) -->
+          <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);padding:1rem;border-radius:8px;width:250px;text-align:center;z-index:2;">
+            <div style="font-size:0.7rem;color:#aaa;font-family:var(--font-heading);font-weight:700;margin-bottom:0.25rem;">DELAY</div>
+            <div style="color:white;font-size:0.9rem;font-weight:600;">Wait 1 Hour</div>
+          </div>
+
+          <div style="height:30px;width:2px;background:rgba(255,255,255,0.2);z-index:1;"></div>
+
+          <!-- Visual Workflow Node 3 (Condition/Branch) -->
+          <div style="background:rgba(59,130,246,0.15);border:1px solid #3b82f6;padding:1rem;border-radius:8px;width:250px;text-align:center;z-index:2;">
+            <div style="font-size:0.7rem;color:#3b82f6;font-family:var(--font-heading);font-weight:700;margin-bottom:0.25rem;">ACTION</div>
+            <div style="color:white;font-size:0.9rem;font-weight:600;">Send Email: "Forgot Something?"</div>
+          </div>
+
+          <!-- Floating Tool Panel -->
+          <div style="position:absolute;top:20px;left:20px;background:rgba(0,0,0,0.8);border:1px solid rgba(255,255,255,0.1);padding:1rem;border-radius:8px;width:150px;">
+            <div style="color:white;font-size:0.75rem;margin-bottom:0.5rem;display:flex;align-items:center;gap:0.5rem;"><span style="color:#FFA726">⚡</span> Trigger</div>
+            <div style="color:white;font-size:0.75rem;margin-bottom:0.5rem;display:flex;align-items:center;gap:0.5rem;"><span style="color:#3b82f6">✉️</span> Email</div>
+            <div style="color:white;font-size:0.75rem;margin-bottom:0.5rem;display:flex;align-items:center;gap:0.5rem;"><span style="color:#22c55e">💬</span> WhatsApp</div>
+            <div style="color:white;font-size:0.75rem;display:flex;align-items:center;gap:0.5rem;"><span style="color:#a855f7">🔀</span> Condition</div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Key Features -->
+<section class="key-features-section">
+  <div class="container">
+    <div class="text-center reveal">
+      <h2 class="section-heading">Powerful <span>Automation Tools</span></h2>
+    </div>
+    <div class="key-features-grid reveal">
+      <div class="key-feature-item">
+        <div class="key-feature-icon">⚙️</div>
+        <div class="key-feature-content">
+          <h4>Automation Workflows</h4>
+          <p>Create unlimited automated sequences for marketing and operations.</p>
+        </div>
+      </div>
+      <div class="key-feature-item">
+        <div class="key-feature-icon">🔗</div>
+        <div class="key-feature-content">
+          <h4>Visual Workflow Builder</h4>
+          <p>Easily map out customer journeys with a drag-and-drop canvas.</p>
+        </div>
+      </div>
+      <div class="key-feature-item">
+        <div class="key-feature-icon">✉️</div>
+        <div class="key-feature-content">
+          <h4>Email Campaigns</h4>
+          <p>Trigger beautiful, personalized emails based on user behavior.</p>
+        </div>
+      </div>
+      <div class="key-feature-item">
+        <div class="key-feature-icon">⚡</div>
+        <div class="key-feature-content">
+          <h4>Trigger Conditions</h4>
+          <p>Start automations based on clicks, page views, purchases, or tags.</p>
+        </div>
+      </div>
+      <div class="key-feature-item">
+        <div class="key-feature-icon">⭐</div>
+        <div class="key-feature-content">
+          <h4>Lead Scoring</h4>
+          <p>Automatically assign points to leads based on their engagement.</p>
+        </div>
+      </div>
+      <div class="key-feature-item">
+        <div class="key-feature-icon">🎯</div>
+        <div class="key-feature-content">
+          <h4>Customer Segmentation</h4>
+          <p>Group users dynamically as they progress through workflows.</p>
+        </div>
+      </div>
+      <div class="key-feature-item">
+        <div class="key-feature-icon">📊</div>
+        <div class="key-feature-content">
+          <h4>Workflow Analytics</h4>
+          <p>See exactly where users drop off or convert in every sequence.</p>
+        </div>
+      </div>
+      <div class="key-feature-item">
+        <div class="key-feature-icon">🔀</div>
+        <div class="key-feature-content">
+          <h4>Conditional Logic</h4>
+          <p>Send users down different paths based on their specific actions.</p>
+        </div>
+      </div>
+      <div class="key-feature-item">
+        <div class="key-feature-icon">🛤️</div>
+        <div class="key-feature-content">
+          <h4>Multi-step Sequences</h4>
+          <p>Create complex funnels spanning days, weeks, or months.</p>
+        </div>
+      </div>
+      <div class="key-feature-item">
+        <div class="key-feature-icon">📑</div>
+        <div class="key-feature-content">
+          <h4>Campaign Templates</h4>
+          <p>Start fast with pre-built workflows for common business goals.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Benefits Grid -->
+<section class="benefits-section">
+  <div class="container">
+    <div class="text-center reveal">
+      <h2 class="section-heading">Why Use TASQ <span>Marketing Automation</span>?</h2>
+    </div>
+    <div class="benefits-grid reveal">
+      <div class="benefit-item">
+        <div class="benefit-item-icon">🤖</div>
+        <h4>Eliminate Manual Work</h4>
+        <p>Stop doing repetitive marketing tasks and let the system do it for you.</p>
+      </div>
+      <div class="benefit-item">
+        <div class="benefit-item-icon">🌱</div>
+        <h4>Improve Lead Nurturing</h4>
+        <p>Keep your brand top-of-mind by engaging prospects automatically.</p>
+      </div>
+      <div class="benefit-item">
+        <div class="benefit-item-icon">📈</div>
+        <h4>Boost Conversions</h4>
+        <p>Deliver timely offers that dramatically increase your sales rate.</p>
+      </div>
+      <div class="benefit-item">
+        <div class="benefit-item-icon">⏱️</div>
+        <h4>Save Countless Hours</h4>
+        <p>Set up your marketing engines once and let them run 24/7/365.</p>
+      </div>
+      <div class="benefit-item">
+        <div class="benefit-item-icon">🎯</div>
+        <h4>Personalize at Scale</h4>
+        <p>Make every customer feel like your only customer with tailored messaging.</p>
+      </div>
+      <div class="benefit-item">
+        <div class="benefit-item-icon">📊</div>
+        <h4>Measure Everything</h4>
+        <p>Know exactly which emails and workflows drive the most revenue.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Workflow Steps -->
+<section class="workflow-section">
+  <div class="container">
+    <div class="workflow-grid">
+      <div class="reveal-right">
+        <h2 class="section-heading">How It <span>Works</span></h2>
+        <div class="workflow-steps">
+          <div class="workflow-step">
+            <div class="workflow-step-num">1</div>
+            <div class="workflow-step-content">
+              <h4>Customer Takes Action</h4>
+              <p>A prospect visits a page, submits a form, or clicks a link.</p>
+            </div>
+          </div>
+          <div class="workflow-step">
+            <div class="workflow-step-num">2</div>
+            <div class="workflow-step-content">
+              <h4>Trigger Fires</h4>
+              <p>TASQ instantly detects the action and initiates the workflow.</p>
+            </div>
+          </div>
+          <div class="workflow-step">
+            <div class="workflow-step-num">3</div>
+            <div class="workflow-step-content">
+              <h4>Workflow Starts</h4>
+              <p>The system evaluates conditions (time delays, logic rules).</p>
+            </div>
+          </div>
+          <div class="workflow-step">
+            <div class="workflow-step-num">4</div>
+            <div class="workflow-step-content">
+              <h4>Personalized Sequence</h4>
+              <p>Targeted emails and SMS/WhatsApp messages are sent automatically.</p>
+            </div>
+          </div>
+          <div class="workflow-step">
+            <div class="workflow-step-num">5</div>
+            <div class="workflow-step-content">
+              <h4>Conversion Achieved</h4>
+              <p>The prospect buys, and TASQ updates their CRM profile instantly.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="reveal-left" style="display:flex;align-items:center;justify-content:center;">
+        <img src="../assets/images/marketing_dashboard.jpg" alt="Workflow Marketing" style="width:100%;border-radius:16px;box-shadow:var(--shadow-xl);">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Use Cases -->
+<section class="use-cases-section reveal">
+  <div class="container text-center">
+    <h2 class="section-heading" style="color:white;">Who is this for?</h2>
+    <div class="use-cases-chips">
+      <div class="use-case-chip"><span class="use-case-chip-icon">💻</span> SaaS Companies</div>
+      <div class="use-case-chip"><span class="use-case-chip-icon">🎯</span> Agencies</div>
+      <div class="use-case-chip"><span class="use-case-chip-icon">🛍️</span> E-commerce</div>
+      <div class="use-case-chip"><span class="use-case-chip-icon">🎓</span> Educational Institutions</div>
+      <div class="use-case-chip"><span class="use-case-chip-icon">🤝</span> Consultants</div>
+      <div class="use-case-chip"><span class="use-case-chip-icon">🏢</span> Enterprises</div>
+      <div class="use-case-chip"><span class="use-case-chip-icon">🛠️</span> Service Providers</div>
+    </div>
+  </div>
+</section>
+
+<!-- Testimonials -->
+<section class="testimonials-section reveal">
+  <div class="container">
+    <div class="text-center">
+      <h2 class="section-heading">Trusted by <span>Top Brands</span></h2>
+    </div>
+    <div data-carousel style="margin-top:3rem;">
+      <div class="carousel-wrapper">
+        <div class="carousel-track">
+          <div data-carousel-item class="testimonial-card">
+            <div class="testimonial-stars">★★★★★</div>
+            <p class="testimonial-text">"We set up a 14-day lead nurturing sequence in TASQ, and within a month, our course sales increased by 45%. The visual builder makes it incredibly easy."</p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">J</div>
+              <div>
+                <div class="testimonial-name">Jessica R.</div>
+                <div class="testimonial-company">EduTech Academy</div>
+              </div>
+            </div>
+          </div>
+          <div data-carousel-item class="testimonial-card">
+            <div class="testimonial-stars">★★★★★</div>
+            <p class="testimonial-text">"TASQ's automation acts like a full-time marketing employee that never sleeps. Our abandoned cart recovery workflow alone paid for the software in two days."</p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">T</div>
+              <div>
+                <div class="testimonial-name">Tom Mitchell</div>
+                <div class="testimonial-company">StyleBrand Store</div>
+              </div>
+            </div>
+          </div>
+          <div data-carousel-item class="testimonial-card">
+            <div class="testimonial-stars">★★★★★</div>
+            <p class="testimonial-text">"Being able to seamlessly trigger actions in the CRM based on how people interact with our marketing emails has completely aligned our sales and marketing teams."</p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">K</div>
+              <div>
+                <div class="testimonial-name">Kevin Barnes</div>
+                <div class="testimonial-company">Apex Software</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-controls">
+        <button class="carousel-btn" data-carousel-prev>←</button>
+        <div class="carousel-dots">
+          <div class="carousel-dot active"></div>
+          <div class="carousel-dot"></div>
+          <div class="carousel-dot"></div>
+        </div>
+        <button class="carousel-btn" data-carousel-next>→</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq-section reveal">
+  <div class="container">
+    <div class="text-center">
+      <h2 class="section-heading">Frequently Asked <span>Questions</span></h2>
+    </div>
+    <div class="faq-grid" style="margin-top:2.5rem;max-width:800px;margin-left:auto;margin-right:auto;">
+      <div class="faq-item">
+        <button class="faq-question">Can workflows be fully customized? <span class="faq-icon">+</span></button>
+        <div class="faq-answer"><div class="faq-answer-inner">Yes, build any workflow using our visual drag-and-drop builder with infinite combinations of conditions, branches, delays, and actions.</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">How many workflows can I have? <span class="faq-icon">+</span></button>
+        <div class="faq-answer"><div class="faq-answer-inner">Create unlimited automated workflows on all TASQ plans with no restrictions on the number of active automations.</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">Does marketing automation integrate with the CRM? <span class="faq-icon">+</span></button>
+        <div class="faq-answer"><div class="faq-answer-inner">Seamlessly. Workflow actions automatically update CRM contacts, move deals through pipelines, and create tasks for your team in real-time.</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">Can I pause or edit live automations? <span class="faq-icon">+</span></button>
+        <div class="faq-answer"><div class="faq-answer-inner">Yes, you can pause, edit, clone, or delete any automation at any time without losing historical data or disrupting current users in the flow.</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">What types of triggers are supported? <span class="faq-icon">+</span></button>
+        <div class="faq-answer"><div class="faq-answer-inner">Triggers include form submissions, email opens/clicks, page visits, tag additions, deal stage changes, appointment bookings, and custom API events.</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="section">
+  <div class="container">
+    <div class="cta-banner reveal">
+      <h2 class="cta-banner-title">Automate Your Marketing Today</h2>
+      <p class="cta-banner-desc">Save time, engage leads instantly, and watch your conversions soar with TASQ.</p>
+      <div class="cta-banner-btns">
+        <a href="../pricing.html" class="btn btn-dark btn-lg btn-ripple">View Pricing <span class="btn-arrow">→</span></a>
+        <a href="../contact.html" class="btn btn-ghost btn-lg btn-ripple">Contact Us <span class="btn-arrow">→</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Shared Footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="../index.html" class="nav-logo"><div class="logo-icon">T</div><span class="logo-text">TASQ</span></a>
+        <p>The all-in-one business automation platform that helps businesses grow faster and smarter.</p>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col"><h4>Features</h4><a href="crm.html">CRM</a><a href="funnel-builder.html">Funnel Builder</a><a href="social-media.html">Social Media</a><a href="marketing-automation.html">Marketing</a><a href="email-whatsapp.html">Email & WhatsApp</a><a href="calendar.html">Calendar</a></div>
+        <div class="footer-col"><h4>More Features</h4><a href="ai-bot.html">AI Bot</a><a href="analytics.html">Analytics</a><a href="reputation.html">Reputation</a><a href="invoices.html">Invoices</a><a href="memberships.html">Memberships</a><a href="integrations.html">Integrations</a></div>
+        <div class="footer-col"><h4>Company</h4><a href="../pricing.html">Pricing</a><a href="../contact.html">Contact</a></div>
+      </div>
+    </div>
+    <div class="footer-bottom"><p>© 2024 TASQ. All rights reserved.</p><p>Built for ambitious businesses.</p></div>
+  </div>
+</footer>
+
+<script src="../js/main.js" defer></script>
+<script src="../js/feature-detail.js" defer></script>
+</body>
+</html>
