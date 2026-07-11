@@ -141,7 +141,7 @@
 .feature-checklist-icon {
   width: 24px;
   height: 24px;
-  background: #6366f1; /* Indigo/Purple color to match mockup */
+  background: var(--gradient-orange);
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -151,21 +151,22 @@
   flex-shrink: 0;
 }
 
-/* Make primary buttons in feature stack purple */
+/* Make primary buttons in feature stack orange */
 .feature-stack-btns .btn-primary {
-  background: #8b5cf6;
-  box-shadow: 0 4px 15px rgba(139, 92, 246, 0.4);
+  background: var(--gradient-orange);
+  box-shadow: 0 4px 15px rgba(255,106,0,0.35);
 }
 .feature-stack-btns .btn-primary:hover {
-  box-shadow: 0 8px 25px rgba(139, 92, 246, 0.6);
+  box-shadow: 0 8px 25px rgba(255,106,0,0.5);
+  transform: translateY(-2px);
 }
 .feature-stack-btns .btn-secondary {
   border-color: #e2e8f0;
   color: #333;
 }
 .feature-stack-btns .btn-secondary:hover {
-  border-color: #8b5cf6;
-  color: #8b5cf6;
+  border-color: var(--color-orange);
+  color: var(--color-orange);
   background: transparent;
   box-shadow: none;
 }
