@@ -222,31 +222,22 @@
 .about-bullet {
   display: flex;
   align-items: center;
-  gap: 0.6rem;
+  gap: 0.5rem;
   font-size: 0.875rem;
   color: #444;
   font-family: var(--font-heading);
   font-weight: 500;
 }
 
-/* Remove any pseudo-element */
+/* Disabled - tick mark is inline in HTML */
 .about-bullet::before {
   display: none;
-}
-
-/* The explicit orange dot span */
-.about-dot {
-  display: inline-block;
-  width: 10px;
-  height: 10px;
-  min-width: 10px;
-  border-radius: 50%;
-  background: linear-gradient(135deg, #FF6A00, #ee9c44);
-  flex-shrink: 0;
+  content: none;
 }
 
 /* Hide any lingering old icon spans */
-.about-bullet-icon {
+.about-bullet-icon,
+.about-dot {
   display: none !important;
 }
 
