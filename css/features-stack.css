@@ -107,7 +107,7 @@
 
 .feature-stack-title {
   font-family: var(--font-heading);
-  font-size: 2.75rem;
+  font-size: 1.75rem;
   font-weight: 800;
   color: var(--color-black);
   margin-bottom: 1.25rem;
@@ -195,7 +195,7 @@
 }
 
 @media (max-width: 768px) {
-  .feature-stack-title { font-size: 2rem; }
+  .feature-stack-title { font-size: 1.5rem; }
   .feature-checklist { grid-template-columns: 1fr; }
   .feature-stack-btns { flex-direction: column; align-items: stretch; }
   .feature-stack-btns .btn { width: 100%; text-align: center; }
