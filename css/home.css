@@ -229,20 +229,23 @@
   font-weight: 500;
 }
 
+/* Remove any pseudo-element */
 .about-bullet::before {
-  content: '';
-  width: 12px;
-  height: 12px;
-  background: var(--gradient-orange);
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-  background-image: var(--gradient-orange);
+  display: none;
 }
 
-/* Hide the old icon span if browser caches old HTML */
+/* The explicit orange dot span */
+.about-dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  min-width: 10px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #FF6A00, #ee9c44);
+  flex-shrink: 0;
+}
+
+/* Hide any lingering old icon spans */
 .about-bullet-icon {
   display: none !important;
 }
