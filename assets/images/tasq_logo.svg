@@ -1,50 +1,42 @@
-<!-- TASQ Logo SVG matching the provided image style -->
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 90" width="320" height="90">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 180" width="520" height="180">
   <defs>
-    <style>
-      @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@900&amp;display=swap');
-    </style>
     <linearGradient id="qGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#FFAA00;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#EE4400;stop-opacity:1" />
+      <stop offset="0%" style="stop-color:#FFB347;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FF6A00;stop-opacity:1" />
     </linearGradient>
-    <linearGradient id="tailGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#FF8800;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#EE3300;stop-opacity:1" />
-    </linearGradient>
-    <filter id="shadow" x="-5%" y="-5%" width="110%" height="120%">
-      <feDropShadow dx="1" dy="2" stdDeviation="2" flood-color="rgba(0,0,0,0.15)"/>
-    </filter>
   </defs>
 
-  <!-- TAS in dark chocolate brown with Nunito Black -->
-  <text x="4" y="66"
-    font-family="'Nunito', 'Arial Black', sans-serif"
+  <!-- TAS letters in dark brown/chocolate -->
+  <text
+    x="10"
+    y="110"
+    font-family="'Arial Black', 'Arial', sans-serif"
     font-weight="900"
-    font-size="72"
-    fill="#2C1206"
-    filter="url(#shadow)"
-    letter-spacing="-1">TAS</text>
+    font-size="115"
+    fill="#2B1600"
+    letter-spacing="-2"
+    style="font-stretch:condensed;"
+  >TAS</text>
 
-  <!-- Q in orange gradient -->
-  <text x="220" y="66"
-    font-family="'Nunito', 'Arial Black', sans-serif"
+  <!-- Q letter in orange gradient -->
+  <text
+    x="335"
+    y="110"
+    font-family="'Arial Black', 'Arial', sans-serif"
     font-weight="900"
-    font-size="72"
+    font-size="115"
     fill="url(#qGrad)"
-    filter="url(#shadow)">Q</text>
+    letter-spacing="-2"
+  >Q</text>
 
-  <!-- Diagonal tail/slash of Q in orange -->
-  <rect x="269" y="54" width="42" height="13" rx="6" ry="6"
-    transform="rotate(30 269 54)"
-    fill="url(#tailGrad)"
-    filter="url(#shadow)"/>
-
-  <!-- Subtitle: All in One Marketing CRM -->
-  <text x="4" y="86"
-    font-family="'Nunito', 'Arial', sans-serif"
-    font-weight="400"
-    font-size="13.5"
-    fill="#1B3A6E"
-    letter-spacing="0.8">All in One Marketing CRM</text>
+  <!-- Tagline -->
+  <text
+    x="18"
+    y="148"
+    font-family="'Arial', sans-serif"
+    font-weight="500"
+    font-size="22"
+    fill="#1A3A6B"
+    letter-spacing="0.5"
+  >All in One Marketing CRM</text>
 </svg>
