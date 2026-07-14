@@ -261,11 +261,34 @@
   padding: var(--space-24) 0;
 }
 
-.services-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1.5rem;
+/* ── Services Marquee ── */
+.services-marquee-wrapper {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
   margin-top: 3rem;
+  padding: 1rem 0; /* Space for hover shadow */
+  mask-image: linear-gradient(to right, transparent, black 5%, black 95%, transparent);
+  -webkit-mask-image: linear-gradient(to right, transparent, black 5%, black 95%, transparent);
+}
+
+.services-marquee-track {
+  display: flex;
+  gap: 1.5rem;
+  width: max-content;
+  animation: scroll-services 25s linear infinite;
+}
+
+.services-marquee-track:hover {
+  animation-play-state: paused;
+}
+
+@keyframes scroll-services {
+  0% { transform: translateX(0); }
+  /* -50% translates it exactly half the total track width.
+     Because we duplicated the exact 6 cards, half the track is exactly 1 full set of cards.
+     We must also subtract half the gap (1.5rem / 2 = 0.75rem) to align perfectly. */
+  100% { transform: translateX(calc(-50% - 0.75rem)); }
 }
 
 /* ── Features Preview ── */
@@ -368,7 +391,7 @@
   .hero-grid { grid-template-columns: 1fr; }
   .hero-title { font-size: 2.75rem; }
   .stats-grid { grid-template-columns: repeat(3, 1fr); }
-  .services-grid { grid-template-columns: repeat(2, 1fr); }
+  
   .features-preview-grid { grid-template-columns: repeat(2, 1fr); }
 }
 
@@ -377,7 +400,7 @@
   .hero-btns { flex-direction: column; align-items: flex-start; }
   .stats-grid { grid-template-columns: repeat(2, 1fr); }
   .about-bullets { grid-template-columns: 1fr; }
-  .services-grid { grid-template-columns: 1fr; }
+  
   .features-preview-grid { grid-template-columns: 1fr; }
 }
 

@@ -625,6 +625,8 @@
 
 /* ── SERVICE CARD ── */
 .service-card {
+  width: 350px;
+  flex-shrink: 0;
   background: white;
   border-radius: var(--radius-xl);
   overflow: hidden;
