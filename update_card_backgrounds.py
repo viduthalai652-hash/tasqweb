@@ -3,6 +3,7 @@ import re
 services_data = [
     {
         "badge": "INSTAGRAM AUTOMATION",
+        "key": "instagram",
         "name": "Instagram Automation Packs",
         "title": "Automate Engagement & <span>Lead Generation</span>",
         "img": "social_dashboard.jpg",
@@ -20,6 +21,7 @@ services_data = [
     },
     {
         "badge": "WHATSAPP AUTOMATION",
+        "key": "whatsapp",
         "name": "WhatsApp Lead Automation",
         "title": "Capture & Qualify <span>Leads Instantly</span>",
         "img": "crm_dashboard.jpg",
@@ -37,6 +39,7 @@ services_data = [
     },
     {
         "badge": "GMB AUTOMATION",
+        "key": "gmb",
         "name": "Google My Business Automation",
         "title": "Automate Reviews & <span>Local Reputation</span>",
         "img": "marketing_dashboard.jpg",
@@ -53,6 +56,7 @@ services_data = [
     },
     {
         "badge": "APPOINTMENT SCHEDULING",
+        "key": "appointment",
         "name": "Appointment Booking System",
         "title": "Seamless Bookings & <span>Automated Reminders</span>",
         "img": "funnel_dashboard.jpg",
@@ -70,6 +74,7 @@ services_data = [
     },
     {
         "badge": "SOCIAL MEDIA POSTING",
+        "key": "social",
         "name": "Social Media Auto Posting",
         "title": "Multi-Platform Content <span>Auto-Publishing</span>",
         "img": "social_dashboard.jpg",
@@ -87,6 +92,7 @@ services_data = [
     },
     {
         "badge": "CRM & PIPELINE",
+        "key": "crm",
         "name": "CRM Setup (Basic)",
         "title": "Organize Leads & <span>Track Conversions</span>",
         "img": "crm_dashboard.jpg",
@@ -104,6 +110,7 @@ services_data = [
     },
     {
         "badge": "INVOICE & PAYMENTS",
+        "key": "invoice",
         "name": "Invoice & Payment Automation",
         "title": "Automate Invoicing & <span>Payment Reminders</span>",
         "img": "hero_dashboard.jpg",
@@ -153,7 +160,7 @@ for i, service in enumerate(services_data):
             </div>
           </div>
           
-          <a href="contact.html" class="btn btn-primary btn-ripple">Get Started <span class="btn-arrow">→</span></a>
+          <a href="pricing.html?service={service['key']}" class="btn btn-primary btn-ripple">Get Started <span class="btn-arrow">→</span></a>
         </div>
         <div class="feature-dashboard-preview">
           <img src="assets/images/{service["img"]}" alt="{service["name"]} Dashboard Preview">

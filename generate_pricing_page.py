@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+html_content = '''<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -14,7 +14,7 @@
   <link rel="stylesheet" href="css/base.css">
   <link rel="stylesheet" href="css/components.css?v=13">
   <link rel="stylesheet" href="css/navbar.css?v=4">
-  <link rel="stylesheet" href="css/pricing.css?v=15">
+  <link rel="stylesheet" href="css/pricing.css?v=13">
 </head>
 <body style="background:#080A14;">
 
@@ -367,3 +367,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
 </body>
 </html>
+'''
+
+with open('pricing.html', 'w', encoding='utf-8') as f:
+    f.write(html_content)
+
+print("Successfully generated pricing.html")
