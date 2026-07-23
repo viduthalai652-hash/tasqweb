@@ -1,0 +1,10 @@
+{
+  "name": "tasq-website",
+  "version": "1.0.0",
+  "description": "TASQ Business Automation Website",
+  "scripts": {
+    "dev": "npx http-server -p 8080 -c-1"
+  },
+  "author": "",
+  "license": "ISC"
+}
