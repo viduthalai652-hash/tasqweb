@@ -259,7 +259,19 @@
 /* ── Services Section ── */
 .services-section {
   padding: var(--space-24) 0;
+  background: linear-gradient(rgba(10, 20, 35, 0.8), rgba(10, 20, 35, 0.9)), url('../assets/images/hero_dashboard.jpg') center/cover no-repeat fixed;
+  position: relative;
 }
+
+.services-section .section-label {
+  color: var(--color-orange);
+}
+
+.services-section .section-heading,
+.services-section .section-subheading {
+  color: white;
+}
+
 
 /* ── Services Marquee ── */
 .services-marquee-wrapper {

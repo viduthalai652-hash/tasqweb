@@ -1113,7 +1113,24 @@
   text-align: center;
   border-bottom: 1px solid rgba(0,0,0,0.08);
   background: var(--color-white-warm);
+  position: relative;
+  overflow: hidden;
 }
+
+/* Optional overlay if we use background images directly on the header */
+.pricing-card-header::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: linear-gradient(to bottom, rgba(255,255,255,0.7), rgba(255,255,255,0.95));
+  z-index: 1;
+}
+
+.pricing-card-title, .pricing-card-desc {
+  position: relative;
+  z-index: 2;
+}
+
 
 .pricing-card-title {
   font-family: var(--font-heading);
