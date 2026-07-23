@@ -1,14 +1,14 @@
 import re
 
-for fname in ['index.html', 'features.html']:
-    with open(fname, 'r', encoding='utf-8') as f:
+files = ['index.html', 'features.html', 'pricing.html']
+for filepath in files:
+    with open(filepath, 'r', encoding='utf-8') as f:
         content = f.read()
     
-    # Bump home.css cache
-    content = content.replace('css/home.css"', 'css/home.css?v=2"')
+    # Bump base.css cache string
+    content = re.sub(r'base\.css\?v=\d+', 'base.css?v=20', content)
     
-    # Bump features-stack.css cache
-    content = content.replace('css/features-stack.css?v=3"', 'css/features-stack.css?v=4"')
-    
-    with open(fname, 'w', encoding='utf-8') as f:
+    with open(filepath, 'w', encoding='utf-8') as f:
         f.write(content)
+        
+print("Cache versions bumped.")
