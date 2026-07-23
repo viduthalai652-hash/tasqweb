@@ -3,7 +3,7 @@
    ============================================ */
 
 .pricing-hero {
-  background: #080A14;
+  background: var(--color-white-warm);
   padding: 8rem 0 3rem;
   text-align: center;
   position: relative;
@@ -26,7 +26,7 @@
   font-family: var(--font-heading);
   font-weight: 900;
   font-size: 3.25rem;
-  color: white;
+  color: var(--color-black);
   letter-spacing: -0.02em;
   margin-bottom: 1rem;
   position: relative;
@@ -41,7 +41,7 @@
 
 .pricing-hero-desc {
   font-size: 1.1rem;
-  color: rgba(255, 255, 255, 0.7);
+  color: #555;
   max-width: 600px;
   margin: 0 auto 2.5rem;
   line-height: 1.7;
@@ -61,10 +61,10 @@
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
-  background: rgba(255, 255, 255, 0.04);
+  background: white;
   padding: 0.5rem;
   border-radius: 60px;
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(0,0,0,0.08);
   backdrop-filter: blur(10px);
   justify-content: center;
   max-width: 950px;
@@ -73,7 +73,7 @@
 .service-tab-btn {
   background: transparent;
   border: none;
-  color: rgba(255, 255, 255, 0.7);
+  color: #555;
   padding: 0.6rem 1.25rem;
   border-radius: 50px;
   font-family: var(--font-heading);
@@ -84,8 +84,8 @@
 }
 
 .service-tab-btn:hover {
-  color: white;
-  background: rgba(255, 255, 255, 0.08);
+  color: var(--color-black);
+  background: rgba(0,0,0,0.04);
 }
 
 .service-tab-btn.active {
@@ -97,7 +97,7 @@
 /* ── Pricing Section (Reference Image Dark Layout) ── */
 .pricing-section {
   padding: 0 0 7rem 0;
-  background: #080A14;
+  background: var(--color-white-warm);
   position: relative;
 }
 
@@ -278,8 +278,9 @@
 /* ── Full Services Overview Section ── */
 .pricing-overview-section {
   padding: 6rem 0;
-  background: #0B0E1B;
-  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  background: var(--color-white);
+  
+  border-top: 1px solid rgba(0,0,0,0.08);
 }
 
 .pricing-overview-title {
@@ -287,7 +288,7 @@
   font-family: var(--font-heading);
   font-size: 2.2rem;
   font-weight: 800;
-  color: white;
+  color: var(--color-black);
   margin-bottom: 3rem;
 }
 
@@ -298,8 +299,9 @@
 .pricing-table-wrapper {
   overflow-x: auto;
   border-radius: 20px;
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  background: #101426;
+  border: 1px solid rgba(0,0,0,0.08);
+  
+  background: white;
 }
 
 .pricing-table {
@@ -311,13 +313,15 @@
 
 .pricing-table th, .pricing-table td {
   padding: 1.25rem 1.5rem;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
-  color: rgba(255, 255, 255, 0.85);
+  border-bottom: 1px solid rgba(0,0,0,0.06);
+  
+  color: #444;
   font-family: var(--font-heading);
 }
 
 .pricing-table th {
-  background: rgba(255, 255, 255, 0.03);
+  
+  background: rgba(0,0,0,0.02);
   font-size: 0.85rem;
   text-transform: uppercase;
   letter-spacing: 0.05em;
@@ -331,7 +335,7 @@
 
 .pricing-table td.service-name-cell {
   font-weight: 800;
-  color: white;
+  color: var(--color-black);
 }
 
 .pricing-table td.price-cell {
