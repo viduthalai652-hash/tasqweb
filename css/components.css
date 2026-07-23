@@ -1082,91 +1082,91 @@
 }
 
 /* ── New Service / Pricing Card ── */
+/* ── New Service / Pricing Card (Dark Theme) ── */
 .pricing-card {
-  background: white;
+  background: #141518;
   border-radius: var(--radius-xl);
-  border: 1px solid rgba(0,0,0,0.08);
-  box-shadow: var(--shadow-card);
+  border: 1px solid rgba(255,255,255,0.05);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
   display: flex;
   flex-direction: column;
   overflow: hidden;
-  transition: transform var(--transition-base), box-shadow var(--transition-base);
+  transition: transform var(--transition-base), box-shadow var(--transition-base), border-color var(--transition-base);
   height: 100%;
   width: 100%;
-  max-width: 380px; /* Base max width for grid */
+  max-width: 380px;
   flex-shrink: 0;
 }
 
 .services-marquee-track .pricing-card {
-  width: 380px; /* Fixed width in marquee */
+  width: 380px;
   max-width: none;
 }
 
 .pricing-card:hover {
   transform: translateY(-8px);
-  box-shadow: var(--shadow-orange);
+  box-shadow: 0 15px 40px rgba(255,106,0,0.15);
   border-color: rgba(255,106,0,0.3);
 }
 
 .pricing-card-header {
-  padding: 2rem;
+  padding: 1.5rem;
   text-align: center;
-  border-bottom: 1px solid rgba(0,0,0,0.08);
-  background: var(--color-white-warm);
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+  background: #1a1b1f;
 }
-
-
-
 
 .pricing-card-title {
   font-family: var(--font-heading);
   font-weight: 800;
-  font-size: 1.5rem;
-  color: var(--color-black);
-  margin-bottom: 0.75rem;
+  font-size: 1.4rem;
+  color: white;
+  margin-bottom: 0.5rem;
   line-height: 1.2;
 }
 
 .pricing-card-desc {
-  font-size: 0.95rem;
-  color: #555;
+  font-size: 0.9rem;
+  color: rgba(255,255,255,0.65);
   line-height: 1.5;
 }
 
 .pricing-card-plans {
   display: flex;
-  border-bottom: 1px solid rgba(0,0,0,0.08);
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+  background: #141518;
 }
 
 .pricing-plan {
   flex: 1;
-  padding: 1.25rem 1rem;
+  padding: 1rem 0.75rem;
   text-align: center;
 }
 
 .pricing-plan:first-child {
-  border-right: 1px solid rgba(0,0,0,0.08);
+  border-right: 1px solid rgba(255,255,255,0.05);
 }
 
 .plan-name {
   font-family: var(--font-heading);
   font-weight: 700;
-  font-size: 0.8rem;
+  font-size: 0.75rem;
   color: var(--color-orange);
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.25rem;
 }
 
 .plan-price {
   font-weight: 700;
-  font-size: 1.1rem;
-  color: var(--color-black);
+  font-size: 1rem;
+  color: white;
 }
 
 .pricing-card-features {
-  padding: 2rem;
+  padding: 1.5rem;
   flex-grow: 1;
+  background: #141518;
 }
 
 .pricing-card-features ul {
@@ -1182,8 +1182,8 @@
   display: flex;
   align-items: flex-start;
   gap: 0.75rem;
-  font-size: 0.95rem;
-  color: #444;
+  font-size: 0.9rem;
+  color: rgba(255,255,255,0.75);
   line-height: 1.4;
 }
 
@@ -1193,8 +1193,9 @@
 }
 
 .pricing-card-footer {
-  padding: 0 2rem 2rem 2rem;
+  padding: 0 1.5rem 1.5rem 1.5rem;
   margin-top: auto;
+  background: #141518;
 }
 
 .pricing-card-footer .btn {
@@ -1203,13 +1204,14 @@
 
 .pricing-card-img {
   width: 100%;
-  height: 170px;
-  background: linear-gradient(135deg, rgba(255,106,0,0.08), rgba(255,140,26,0.04));
+  height: 180px;
+  background: #0f1013;
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
   overflow: hidden;
+  border-bottom: 1px solid rgba(255,255,255,0.05);
 }
 
 .pricing-card-img::after {
@@ -1224,3 +1226,4 @@
 .pricing-card:hover .pricing-card-img::after {
   opacity: 0.15;
 }
+
